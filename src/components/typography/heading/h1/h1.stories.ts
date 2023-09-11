@@ -19,6 +19,6 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     children:
-      'This is H1 Heading and we are apply custom test changes to have fun',
+      'This is H1 Heading and we are apply custom test changes to have fun, ok I am done.',
   },
 }
