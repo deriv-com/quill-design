@@ -17,7 +17,7 @@
     "lint:fix": "eslint --fix .",
     "test": "jest",
     "test:ci": "jest --coverage",
-    "test:staged": "jest --bail --findRelatedTests",
+    "test:staged": "jest --bail --findRelatedTests --passWithNoTests",
     "test:update": "jest --updateSnapshot",
     "prepare": "husky install",
     "semantic-release": "semantic-release",
