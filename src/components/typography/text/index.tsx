@@ -24,11 +24,11 @@ export const Text = forwardRef(
   ) => {
     const componentClassnames = qtJoin(
       'font-sans',
-      'text-typography-prominent',
+      'text-solid-coral-500',
       size === 'xl' && 'text-body-xl',
       size === 'lg' && 'text-body-lg',
       size === 'md' && 'text-body-md',
-      size === 'sm' && 'text-body-sm',
+      size === 'sm' && 'text-body-xl',
       size === 'xl' && 'space-y-paragraphSpacing-body-xl',
       size === 'lg' && 'space-y-paragraphSpacing-body-lg',
       size === 'md' && 'space-y-paragraphSpacing-body-md',
