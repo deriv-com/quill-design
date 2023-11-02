@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Should render a disabled Input 1`] = `
+<div>
+  <div
+    class="w-[360px] rounded-400 inline-flex items-center justify-center enabled:cursor-pointer px-800 py-50 text-100 text-regular text-sans h-2800 border-50 hover:border-black-75 bg-solid-slate-100 text-slate-1400 cursor-not-allowed"
+  >
+    <input
+      class="focus:outline-none grow text-slate-50 disabled:cursor-not-allowed text-left bg-solid-slate-100 text-slate-1400 cursor-not-allowed"
+      disabled=""
+      placeholder="Placeholder"
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input Should render an Input with centered text 1`] = `
+<div>
+  <div
+    class="w-[360px] rounded-400 inline-flex items-center justify-center bg-solid-slate-50 enabled:cursor-pointer px-800 py-50 text-100 text-regular text-sans h-2800 border-50 hover:border-black-75 cursor-pointer focus-within:border-75 focus-within:border-solid-slate-1400 hover:border-75 hover:border-opacity-black-200"
+  >
+    <input
+      class="focus:outline-none grow text-slate-50 disabled:cursor-not-allowed text-center cursor-pointer"
+      placeholder="Placeholder"
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Input Should render an Input with default props 1`] = `
+<div>
+  <div
+    class="w-[360px] rounded-400 inline-flex items-center justify-center bg-solid-slate-50 enabled:cursor-pointer px-800 py-50 text-100 text-regular text-sans h-2800 border-50 hover:border-black-75 cursor-pointer focus-within:border-75 focus-within:border-solid-slate-1400 hover:border-75 hover:border-opacity-black-200"
+  >
+    <input
+      class="focus:outline-none grow text-slate-50 disabled:cursor-not-allowed text-left cursor-pointer"
+      placeholder="Placeholder"
+      type="text"
+    />
+  </div>
+</div>
+`;
