@@ -1,14 +1,9 @@
-import {
-  ComponentPropsWithRef,
-  ElementType,
-  MouseEventHandler,
-  useEffect,
-  useState,
-} from 'react'
+import { ComponentPropsWithRef, ElementType, useEffect, useState } from 'react'
 import qtMerge from 'qt-merge'
 import {
   LabelPairedChevronLeftRegularIcon,
   LabelPairedChevronRightRegularIcon,
+  LabelPairedCircleFillIcon,
   LabelPairedEllipsisRegularIcon,
 } from '@deriv/quill-icons'
 import { Button, CaptionText } from '..'
@@ -39,6 +34,7 @@ const Pagination = <T,>({
   const paginationRange = usePaginationRange({
     totalPageCount,
     currentPage,
+    variant,
   })
 
   useEffect(() => {
@@ -51,8 +47,8 @@ const Pagination = <T,>({
 
   const gotToPreviousPage = () => setCurrentPage((page) => page - 1)
 
-  const changePage: MouseEventHandler<HTMLButtonElement> = (event) => {
-    const pageNumber = Number((event.target as HTMLElement).textContent)
+  const changePage = (event: string | null) => {
+    const pageNumber = Number(event)
     setCurrentPage(pageNumber)
   }
 
@@ -83,7 +79,9 @@ const Pagination = <T,>({
               return (
                 <PaginationButton
                   key={`${pageNumber}_${index}`}
-                  onClick={changePage}
+                  onClick={(e) =>
+                    changePage((e.target as HTMLElement).textContent)
+                  }
                   disabled
                   className={styles['pagination-btn--icon']}
                 >
@@ -94,7 +92,9 @@ const Pagination = <T,>({
             return (
               <PaginationButton
                 key={pageNumber}
-                onClick={changePage}
+                onClick={(e) =>
+                  changePage((e.target as HTMLElement).textContent)
+                }
                 className={
                   currentPage === pageNumber
                     ? 'bg-solid-slate-1400 hover:bg-solid-slate-1400'
@@ -115,12 +115,12 @@ const Pagination = <T,>({
           return (
             <Button
               key={pageNumber}
-              onClick={changePage}
+              onClick={() => changePage(String(pageNumber))}
               size="sm"
               variant="tertiary"
               colorStyle="black"
             >
-              {currentPage === pageNumber ? '•' : '○'}
+              <LabelPairedCircleFillIcon fill="black" iconSize="sm" />
             </Button>
           )
         })}

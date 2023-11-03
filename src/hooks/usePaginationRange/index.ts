@@ -15,16 +15,21 @@ const range = (start: number, end: number) => {
 type UsePaginationRangeProps = {
   currentPage: number
   totalPageCount: number
+  variant: 'number' | 'bullet'
 }
 
 export const usePaginationRange = ({
   currentPage,
   totalPageCount,
+  variant,
 }: UsePaginationRangeProps) => {
   const TOTAL_PAGES_TO_DISPLAY = 5
   const FIRST_PAGE_INDEX = 1
   const START_END_PAGE_COUNT = 2
   const paginationRange: Array<number | '...'> = useMemo(() => {
+    if (variant === 'bullet') {
+      range(FIRST_PAGE_INDEX, totalPageCount)
+    }
     if (totalPageCount >= TOTAL_PAGES_TO_DISPLAY + 1) {
       /**
        * Calculate left and right sibling index and make sure they are within range 1 and totalPageCount
@@ -70,6 +75,6 @@ export const usePaginationRange = ({
      * Case 4: If the number of pages is less than the page numbers we want to show in PaginationComponent
      */
     return range(FIRST_PAGE_INDEX, totalPageCount)
-  }, [currentPage, totalPageCount])
+  }, [currentPage, totalPageCount, variant])
   return paginationRange
 }
