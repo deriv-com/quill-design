@@ -1,30 +1,37 @@
-import { ComponentPropsWithRef, ElementType, useEffect, useState } from 'react'
-import qtMerge from 'qt-merge'
+import { useEffect, useState } from 'react'
 import {
   LabelPairedChevronLeftRegularIcon,
   LabelPairedChevronRightRegularIcon,
-  LabelPairedCircleFillIcon,
-  LabelPairedEllipsisRegularIcon,
 } from '@deriv/quill-icons'
-import { Button, CaptionText } from '..'
-import { usePaginationRange, DOTS } from 'hooks/usePaginationRange'
+import { usePaginationRange } from 'hooks/usePaginationRange'
 import PaginationButton from './pagination-button'
-import styles from './styles.module.scss'
+import { paginationVariants } from './pagination.classnames'
+import { PaginationProps } from './pagination.types'
 
-type PaginationProps<T> = {
-  className?: string
-  contentPerPage: number
-  dataList: Array<T & { id: string | number }>
-  renderComponent: ElementType
-  variant: 'number' | 'bullet'
-} & ComponentPropsWithRef<'div'>
-
+/**
+ * Component that can divide large lists of data into smaller more manageable pages.
+ * @name Pagination
+ * @param {string} className- Styles to be applied to Pagination body
+ * @param {number} contentPerPage- Number of items to be displayed per page
+ * @param {Array} dataList- List of data to be displayed
+ * @param {React.Component} renderComponent- Component to be rendered
+ * @param {string} variant- Variant of Pagination.
+ *
+ * @example
+ * <Pagination
+ * className="pagination__container"
+ * contentPerPage={10}
+ * dataList={dataList}
+ * renderComponent={<DisplayContent />}
+ * variant="number"
+ * />
+ */
 const Pagination = <T,>({
   className,
   contentPerPage,
   dataList = [],
   renderComponent,
-  variant,
+  variant = 'number',
 }: PaginationProps<T>) => {
   const [totalPageCount, setTotalPageCount] = useState(0)
   const [currentPage, setCurrentPage] = useState(1)
@@ -66,71 +73,29 @@ const Pagination = <T,>({
         ))}
       </section>
       <section className="flex items-center justify-center gap-400">
-        <PaginationButton
+        <button
           onClick={gotToPreviousPage}
           disabled={currentPage === 1}
-          className={styles['pagination-btn--icon']}
+          className={paginationVariants({ variant })}
         >
           <LabelPairedChevronLeftRegularIcon fill="black" iconSize="sm" />
-        </PaginationButton>
-        {paginationRange.map((pageNumber, index) => {
-          if (variant === 'number') {
-            if (pageNumber === DOTS) {
-              return (
-                <PaginationButton
-                  key={`${pageNumber}_${index}`}
-                  onClick={(e) =>
-                    changePage((e.target as HTMLElement).textContent)
-                  }
-                  disabled
-                  className={styles['pagination-btn--icon']}
-                >
-                  <LabelPairedEllipsisRegularIcon fill="black" iconSize="sm" />
-                </PaginationButton>
-              )
-            }
-            return (
-              <PaginationButton
-                key={pageNumber}
-                onClick={(e) =>
-                  changePage((e.target as HTMLElement).textContent)
-                }
-                className={
-                  currentPage === pageNumber
-                    ? 'bg-solid-slate-1400 hover:bg-solid-slate-1400'
-                    : ''
-                }
-              >
-                <CaptionText
-                  className={qtMerge(
-                    'text-ellipsis leading-100 text-typography-default',
-                    currentPage === pageNumber ? 'text-solid-slate-50' : '',
-                  )}
-                >
-                  {pageNumber}
-                </CaptionText>
-              </PaginationButton>
-            )
-          }
-          return (
-            <Button
-              key={pageNumber}
-              onClick={() => changePage(String(pageNumber))}
-              size="sm"
-              variant="tertiary"
-              colorStyle="black"
-            >
-              <LabelPairedCircleFillIcon fill="black" iconSize="sm" />
-            </Button>
-          )
-        })}
-        <PaginationButton
+        </button>
+        {paginationRange.map((pageNumber, index) => (
+          <PaginationButton
+            key={`${pageNumber}_${index}`}
+            pageNumber={pageNumber}
+            variant={variant}
+            currentPage={currentPage}
+            handleOnClick={changePage}
+          />
+        ))}
+        <button
           onClick={goToNextPage}
           disabled={currentPage === totalPageCount}
-          className={styles['pagination-btn--icon']}
+          className={paginationVariants({ variant })}
         >
           <LabelPairedChevronRightRegularIcon fill="black" iconSize="sm" />
-        </PaginationButton>
+        </button>
       </section>
     </div>
   )
