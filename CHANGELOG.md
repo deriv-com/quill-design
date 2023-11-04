@@ -1,3 +1,10 @@
+## [1.0.22](https://github.com/deriv-com/quill-design/compare/v1.0.21...v1.0.22) (2023-11-03)
+
+
+### ♻️ 	 Chores
+
+* add generic exlude null type ([11dba49](https://github.com/deriv-com/quill-design/commit/11dba49a657fdb59ba4aedd2dd1b847cae65bc4c))
+
 ## [1.0.21](https://github.com/deriv-com/quill-design/compare/v1.0.20...v1.0.21) (2023-10-31)
 
 
