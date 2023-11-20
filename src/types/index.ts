@@ -37,3 +37,7 @@ export type ExcludeNullAndUndefined<T, K extends keyof T> = {
 export type QuillIconComponent = React.ForwardRefExoticComponent<
   Omit<QuillSvgProps, 'ref'>
 >
+
+export type ExcludeUndefinedFromUninonType<T> = {
+  [P in keyof T]-?: Exclude<T[P], undefined>
+}
