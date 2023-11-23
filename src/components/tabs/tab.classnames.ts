@@ -1,9 +1,8 @@
 import { cva } from 'class-variance-authority'
-import { VariantClassNames } from 'types'
 import { TabSize } from './types'
 
 export const tabVariants = cva(
-  'inline-flex items-center text-typography-default border-b-100 aria-selected:fill-typography-prominant border-b-transparent hover:border-b-opacity-black-300 active:border-b-opacity-black-300 aria-selected:border-b-solid-slate-1400 aria-selected:text-solid-slate-1400  disabled:fill-opacity-black-300 disabled:text-opacity-black-300  disabled:text-typography-disabled',
+  'group inline-flex items-center text-typography-default border-b-100 aria-selected:fill-typography-prominant border-b-transparent hover:[&:not(:disabled)]:border-b-opacity-black-300 active:[&:not(:disabled)]:border-b-opacity-black-300 aria-selected:border-b-solid-slate-1400 aria-selected:border-b-solid-slate-1400 aria-selected:text-solid-slate-1400 disabled:text-typography-disabled disabled:',
   {
     variants: {
       size: {
@@ -13,12 +12,6 @@ export const tabVariants = cva(
       iconPosition: {
         left: 'flex-row',
         top: 'flex-col',
-      },
-      disabled: {
-        value: false,
-      },
-      color: {
-        dark: 'red',
       },
     },
     compoundVariants: [
@@ -45,30 +38,22 @@ export const tabVariants = cva(
     ],
   },
 )
-export const buttonIconFillCVA = cva('', {
-  variants: {
-    variant: {
-      primary: '',
-      secondary: '',
-    },
-    colorStyle: {
-      black: '',
-      coral: '',
+export const tabIconFillCVA = cva(
+  'group-disabled:fill-opacity-black-300 group-aria-selected:fill-solid-slate-1400 group-active:fill-opacity-black-600',
+  {
+    variants: {
+      size: {
+        sm: '',
+        md: '',
+      },
+      iconPosition: {
+        left: '',
+        top: '',
+      },
     },
   },
-  compoundVariants: [
-    {
-      variant: 'primary',
-      colorStyle: 'black',
-      className: 'fill-typography-prominant',
-    },
-    {
-      variant: 'secondary',
-      colorStyle: 'coral',
-      className: 'fill-typography-default',
-    },
-  ],
-})
+)
+
 export const IconSize: Record<TabSize, { width: number; height: number }> = {
   sm: {
     width: 24,

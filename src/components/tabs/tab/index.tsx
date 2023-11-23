@@ -1,13 +1,6 @@
-import React, {
-  ComponentProps,
-  useContext,
-  useEffect,
-  useState,
-  MouseEvent,
-  useRef,
-} from 'react'
+import { useContext, useEffect, MouseEvent, useRef } from 'react'
 import qtMerge, { qtJoin } from 'qt-merge'
-import { IconSize, buttonIconFillCVA, tabVariants } from '../tab.classnames'
+import { IconSize, tabIconFillCVA, tabVariants } from '../tab.classnames'
 import { TabTriggerProps } from '../types'
 import { TabContext } from '../container'
 
@@ -16,12 +9,8 @@ export const Tab = ({
   size = 'md',
   icon: Icon,
   className,
-  variant = 'secondary',
-  colorStyle = 'coral',
-  disabled,
   iconPosition,
-  onClick,
-  isActive,
+  ...rest
 }: TabTriggerProps) => {
   const { activeTab, handleToggle, id } = useContext(TabContext)
 
@@ -55,16 +44,13 @@ export const Tab = ({
   return (
     <button
       onClick={onClickTab}
-      className={qtMerge(tabVariants({ size, iconPosition, disabled }))}
+      className={qtMerge(tabVariants({ size, iconPosition, className }))}
       role="tab"
-      disabled={disabled}
       ref={ref}
+      {...rest}
     >
       {Icon && (
-        <Icon
-          {...IconSize[size]}
-          className={qtMerge(buttonIconFillCVA({ variant, colorStyle }))}
-        />
+        <Icon {...IconSize[size]} className={qtJoin(tabIconFillCVA())} />
       )}
       {children}
     </button>
