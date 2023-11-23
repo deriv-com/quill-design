@@ -2,7 +2,7 @@ import { cva } from 'class-variance-authority'
 import { TabSize } from './types'
 
 export const tabVariants = cva(
-  'group inline-flex items-center text-typography-default border-b-100 aria-selected:fill-typography-prominant border-b-transparent hover:[&:not(:disabled)]:border-b-opacity-black-300 active:[&:not(:disabled)]:border-b-opacity-black-300 aria-selected:border-b-solid-slate-1400 aria-selected:border-b-solid-slate-1400 aria-selected:text-solid-slate-1400 disabled:text-typography-disabled disabled:',
+  'group inline-flex items-center text-typography-default border-b-100 aria-selected:fill-typography-prominant border-b-transparent hover:[&:not(:disabled)]:border-b-opacity-black-300 active:[&:not(:disabled)]:border-b-opacity-black-300 aria-selected:border-b-solid-slate-1400 aria-selected:border-b-solid-slate-1400 aria-selected:text-solid-slate-1400 disabled:text-typography-disabled',
   {
     variants: {
       size: {
