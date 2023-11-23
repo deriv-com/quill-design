@@ -1,3 +1,16 @@
+## [1.1.15](https://github.com/deriv-com/quill-design/compare/v1.1.14...v1.1.15) (2023-11-23)
+
+
+### ♻️ 	 Chores
+
+* add animation to all statuses ([989b131](https://github.com/deriv-com/quill-design/commit/989b1318ac43263d03a50247d762f74bb6019184))
+* add status message animations ([4665137](https://github.com/deriv-com/quill-design/commit/4665137d554ae56bf7a7fda0ad323842792aafc6))
+* add updated snapshots ([d5ab305](https://github.com/deriv-com/quill-design/commit/d5ab305a252a223e3c514f3aae42f04ea3376727))
+* adjust padding for input with label and value ([6939324](https://github.com/deriv-com/quill-design/commit/6939324d0c4205260d8a2ab18a97332aca4a2f59))
+* remove unnecessary w-full ([d763c8f](https://github.com/deriv-com/quill-design/commit/d763c8fd4d2f5526147a71bfe1a5c846ee9f4657))
+* scope margin to input with label ([51ed663](https://github.com/deriv-com/quill-design/commit/51ed663ea4514be4281359977390ea7d64c6e330))
+* set default with to w-full set border transition on hover remove default placeholder ([988ac49](https://github.com/deriv-com/quill-design/commit/988ac49dec8224292d35f14b537d32f16fac123a))
+
 ## [1.1.14](https://github.com/deriv-com/quill-design/compare/v1.1.13...v1.1.14) (2023-11-17)
 
 

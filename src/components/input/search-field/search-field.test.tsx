@@ -17,14 +17,14 @@ describe('SearchField', () => {
   })
   it('It should handle SearchField change', async () => {
     const onChange = jest.fn()
-    render(<SearchField onChange={onChange} />)
+    render(<SearchField onChange={onChange} placeholder="Search" />)
     const input = screen.getByPlaceholderText('Search')
     await userEvent.type(input, 'test')
     expect(onChange).toHaveBeenCalledTimes(4)
   })
   it('It should handle SearchField focus', async () => {
     const onFocus = jest.fn()
-    render(<SearchField onFocus={onFocus} />)
+    render(<SearchField onFocus={onFocus} placeholder="Search" />)
     const input = screen.getByPlaceholderText('Search')
     await userEvent.click(input)
     expect(onFocus).toHaveBeenCalledTimes(1)
@@ -32,7 +32,7 @@ describe('SearchField', () => {
   })
   it('It should handle SearchField blur', async () => {
     const onBlur = jest.fn()
-    render(<SearchField onBlur={onBlur} />)
+    render(<SearchField onBlur={onBlur} placeholder="Search" />)
     const input = screen.getByPlaceholderText('Search')
     await userEvent.click(input)
     await userEvent.tab()

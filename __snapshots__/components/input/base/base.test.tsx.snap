@@ -3,18 +3,19 @@
 exports[`Input It should render a default Input 1`] = `
 <div>
   <div
-    class="flex flex-col"
+    class="flex w-full flex-col"
   >
     <div
-      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed transition-[border] ease-[cubic-bezier(0.72, 0, 0.24, 1)] duration-[160ms] bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      class="w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      data-has-value="false"
     >
       <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-default [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
         type="text"
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -23,19 +24,20 @@ exports[`Input It should render a default Input 1`] = `
 exports[`Input It should render a disabled Input 1`] = `
 <div>
   <div
-    class="flex flex-col"
+    class="flex w-full flex-col"
   >
     <div
-      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed transition-[border] ease-[cubic-bezier(0.72, 0, 0.24, 1)] duration-[160ms] bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      class="w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      data-has-value="false"
     >
       <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-default [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
         disabled=""
         type="text"
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -44,19 +46,20 @@ exports[`Input It should render a disabled Input 1`] = `
 exports[`Input It should render a disabled Input with a variant of fill 1`] = `
 <div>
   <div
-    class="flex flex-col"
+    class="flex w-full flex-col"
   >
     <div
-      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed transition-[border] ease-[cubic-bezier(0.72, 0, 0.24, 1)] duration-[160ms] [&:has(input:disabled)]:bg-opacity-black-75 focus-within:bg-opacity-black-75 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:bg-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      class="w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600 [&:has(input:disabled)]:bg-opacity-black-75 focus-within:bg-opacity-black-75 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:bg-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      data-has-value="false"
     >
       <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-default [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
         disabled=""
         type="text"
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -65,19 +68,20 @@ exports[`Input It should render a disabled Input with a variant of fill 1`] = `
 exports[`Input It should render a disabled Input with a variant of outline 1`] = `
 <div>
   <div
-    class="flex flex-col"
+    class="flex w-full flex-col"
   >
     <div
-      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed transition-[border] ease-[cubic-bezier(0.72, 0, 0.24, 1)] duration-[160ms] bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      class="w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      data-has-value="false"
     >
       <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-default [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
         disabled=""
         type="text"
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -86,23 +90,24 @@ exports[`Input It should render a disabled Input with a variant of outline 1`] =
 exports[`Input It should render an Input with a label 1`] = `
 <div>
   <div
-    class="flex flex-col"
+    class="flex w-full flex-col"
   >
     <div
-      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed transition-[border] ease-[cubic-bezier(0.72, 0, 0.24, 1)] duration-[160ms] bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      class="w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      data-has-value="false"
     >
       <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-default [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
         type="text"
       />
       <label
-        class="transition-all duration-[160ms] ease-[cubic-bezier(0.72, 0, 0.24, 1)] pointer-events-none absolute peer-placeholder-shown:text-100 peer-placeholder-shown:translate-y-50 peer-focus:-translate-y-full peer-focus:leading-100 peer-focus:text-50 peer-focus:h-900 peer-focus:gap-200 [&:not(placeholder-shown)]:-translate-y-full  [&:not(placeholder-shown)]:leading-100  [&:not(placeholder-shown)]:text-50 [&:not(placeholder-shown)]:mt-200 text-opacity-black-600"
+        class="transition-all duration-[160ms] ease-[cubic-bezier(0.72, 0, 0.24, 1)] pointer-events-none absolute peer-placeholder-shown:text-100 peer-placeholder-shown:translate-y-50 peer-focus:-translate-y-full peer-focus:leading-100 peer-focus:text-50 peer-focus:h-900 peer-focus:gap-200 peer-[:not(placeholder-shown)]:-translate-y-full peer-[:not(placeholder-shown)]:leading-100 peer-[:not(placeholder-shown)]:text-50 text-opacity-black-600"
       >
         Label
       </label>
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -111,18 +116,19 @@ exports[`Input It should render an Input with a label 1`] = `
 exports[`Input It should render an Input with a size of sm 1`] = `
 <div>
   <div
-    class="flex flex-col"
+    class="flex w-full flex-col"
   >
     <div
-      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed transition-[border] ease-[cubic-bezier(0.72, 0, 0.24, 1)] duration-[160ms] bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-400 h-1600 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      class="w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-400 h-1600 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      data-has-value="false"
     >
       <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-default [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1100"
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1100"
         type="text"
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -131,13 +137,14 @@ exports[`Input It should render an Input with a size of sm 1`] = `
 exports[`Input It should render an Input with a status icon 1`] = `
 <div>
   <div
-    class="flex flex-col"
+    class="flex w-full flex-col"
   >
     <div
-      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed transition-[border] ease-[cubic-bezier(0.72, 0, 0.24, 1)] duration-[160ms] bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-green-600 border-opacity-green-600 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-green-800 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-green-800 focus-within:text-solid-green-900 focus-within:border-solid-green-900"
+      class="w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-green-600 border-opacity-green-600 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-green-800 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-green-800 focus-within:text-solid-green-900 focus-within:border-solid-green-900"
+      data-has-value="false"
     >
       <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-default [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
         type="text"
       />
       <div>
@@ -157,7 +164,7 @@ exports[`Input It should render an Input with a status icon 1`] = `
       </div>
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -166,18 +173,19 @@ exports[`Input It should render an Input with a status icon 1`] = `
 exports[`Input It should render an Input with a variant of fill 1`] = `
 <div>
   <div
-    class="flex flex-col"
+    class="flex w-full flex-col"
   >
     <div
-      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed transition-[border] ease-[cubic-bezier(0.72, 0, 0.24, 1)] duration-[160ms] [&:has(input:disabled)]:bg-opacity-black-75 focus-within:bg-opacity-black-75 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:bg-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      class="w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600 [&:has(input:disabled)]:bg-opacity-black-75 focus-within:bg-opacity-black-75 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:bg-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      data-has-value="false"
     >
       <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-default [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
         type="text"
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -186,18 +194,19 @@ exports[`Input It should render an Input with a variant of fill 1`] = `
 exports[`Input It should render an Input with centered text 1`] = `
 <div>
   <div
-    class="flex flex-col"
+    class="flex w-full flex-col"
   >
     <div
-      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed transition-[border] ease-[cubic-bezier(0.72, 0, 0.24, 1)] duration-[160ms] bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      class="w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      data-has-value="false"
     >
       <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-default [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 [&:not(:has(~label))]:text-center h-1200"
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 [&:not(:has(~label))]:text-center h-1200"
         type="text"
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     />
   </div>
 </div>
@@ -206,26 +215,27 @@ exports[`Input It should render an Input with centered text 1`] = `
 exports[`Input It should render an Input with status messages 1`] = `
 <div>
   <div
-    class="flex flex-col"
+    class="flex w-full flex-col"
   >
     <div
-      class="w-[360px] rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed transition-[border] ease-[cubic-bezier(0.72, 0, 0.24, 1)] duration-[160ms] bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      class="w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
+      data-has-value="false"
     >
       <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-default [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:placeholder-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
+        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
         type="text"
       />
     </div>
     <div
-      class="flex justify-between"
+      class="flex justify-between pt-400"
     >
       <p
-        class="py-50 px-800 text-50 leading-100 font-regular transition-all text-opacity-black-400"
+        class="py-50 px-800 text-50 leading-100 font-regular animate-drop-in text-opacity-black-400"
       >
         Message goes here
       </p>
       <p
-        class="py-50 px-800 text-50 leading-100 font-regular transition-all text-opacity-black-400 self-end"
+        class="py-50 px-800 text-50 leading-100 font-regular animate-drop-in text-opacity-black-400 self-end"
       >
         0/0
       </p>

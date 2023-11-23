@@ -4,6 +4,7 @@ import {
   HTMLInputTypeAttribute,
   InputHTMLAttributes,
   forwardRef,
+  useState,
 } from 'react'
 import {
   baseInputLabelVariants,
@@ -69,15 +70,17 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       rightStatusMessage,
       textAlignment = 'left',
       label,
-      placeholder,
       statusIcon: StatusIcon,
+      onChange,
       ...rest
     },
     ref,
   ) => {
+    const [hasValue, setHasValue] = useState(false)
     return (
-      <div className="flex flex-col">
+      <div className="flex w-full flex-col">
         <div
+          data-has-value={hasValue}
           className={qtMerge(
             baseInputWrapperVariants({
               size: inputSize,
@@ -104,7 +107,10 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               }),
             )}
             disabled={!!disabled}
-            placeholder={placeholder}
+            onChange={(e) => {
+              setHasValue(!!e.target.value)
+              onChange?.(e)
+            }}
             ref={ref}
           />
 
@@ -128,9 +134,10 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             </div>
           )}
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between pt-400">
           {leftStatusMessage && (
             <p
+              key={leftStatusMessage}
               className={qtJoin(
                 baseStatusMessageVariants({ status, disabled }),
               )}
@@ -140,6 +147,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           )}
           {rightStatusMessage && (
             <p
+              key={rightStatusMessage}
               className={qtJoin(
                 baseStatusMessageVariants({ status, className: 'self-end' }),
               )}
