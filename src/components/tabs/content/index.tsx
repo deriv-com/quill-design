@@ -7,7 +7,7 @@ export const TabContent = ({ children, className }: ContentProps) => {
   const { activeTab } = useContext(TabContext)
   const childArr = Children.toArray(children)
   const activeChild = childArr.find((_el, i) => i === activeTab)
-  return <div>{activeChild}</div>
+  return <div className={className}>{activeChild}</div>
 }
 
 TabContent.displayName = 'TabContent'

@@ -1,6 +1,5 @@
 import { ComponentProps, useContext } from 'react'
 import { TabContext } from '../container'
-// import { cn } from 'Utils/cn';
 
 type PaneProps = ComponentProps<'div'>
 
@@ -12,6 +11,7 @@ export const TabPanel = ({ children, className, id }: PaneProps) => {
       role="tabpanel"
       id={`${id}-panel`}
       aria-labelledby={`${id}-trigger-${activeTab}`}
+      className={className}
     >
       {children}
     </div>

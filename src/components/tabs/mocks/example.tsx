@@ -3,9 +3,10 @@ import { Tab } from '../tab'
 import { TabContainer } from '../container'
 import { TabContent, TabList, TabPanel } from '..'
 
-const MockTab = ({ disabled, ...props }: ComponentProps<typeof Tab>) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const MockTab = ({ disabled, size, ...props }: ComponentProps<typeof Tab>) => {
   return (
-    <TabContainer id="test">
+    <TabContainer id="test" size={size}>
       <TabList>
         <Tab {...props}>Forex</Tab>
         <Tab disabled={true} {...props}>

@@ -1,8 +1,5 @@
-import { ComponentProps, ReactNode, createContext, useState } from 'react'
-
-export type TabProps = ComponentProps<'div'> & {
-  id: string
-}
+import { createContext, useState } from 'react'
+import { TabProps } from '../types'
 
 type TabContextType = TabProps & {
   handleToggle?: (idx: number) => void
@@ -11,18 +8,24 @@ type TabContextType = TabProps & {
 
 export const TabContext = createContext<TabContextType>({
   activeTab: 0,
-  id: 'example-tab',
 })
 
-export const TabContainer = ({ children, id }: TabProps) => {
+export const TabContainer = ({
+  children,
+  id,
+  size = 'md',
+  className,
+}: TabProps) => {
   const [activeTab, setActiveTab] = useState(0)
   const handleToggle = (index: number) => {
     setActiveTab(index)
   }
 
   return (
-    <TabContext.Provider value={{ activeTab, handleToggle, id }}>
-      <div>{children}</div>
+    <TabContext.Provider value={{ activeTab, handleToggle, id, size }}>
+      <div id={id} className={className}>
+        {children}
+      </div>
     </TabContext.Provider>
   )
 }

@@ -6,13 +6,12 @@ import { TabContext } from '../container'
 
 export const Tab = ({
   children,
-  size = 'md',
   icon: Icon,
   className,
   iconPosition,
   ...rest
 }: TabTriggerProps) => {
-  const { activeTab, handleToggle, id } = useContext(TabContext)
+  const { activeTab, handleToggle, id, size } = useContext(TabContext)
 
   const onClickTab = (e: MouseEvent<HTMLButtonElement>) => {
     if (e.currentTarget.parentElement) {
@@ -25,6 +24,7 @@ export const Tab = ({
   const ref = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
+    // to set default aria-selected
     if (ref.current && ref.current?.parentElement) {
       const items = Array.from(ref.current.parentElement?.children)
       const idx = items.indexOf(ref.current)
@@ -49,7 +49,7 @@ export const Tab = ({
       ref={ref}
       {...rest}
     >
-      {Icon && (
+      {Icon && size && (
         <Icon {...IconSize[size]} className={qtJoin(tabIconFillCVA())} />
       )}
       {children}

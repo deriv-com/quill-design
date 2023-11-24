@@ -1,13 +1,12 @@
-import { ComponentProps, useContext, useEffect, useRef, useState } from 'react'
-import { TabContext } from '../container'
-import qtMerge, { qtJoin } from 'qtMerge'
+import { ComponentProps } from 'react'
+import { qtJoin } from 'qtMerge'
 
 type TabListProps = ComponentProps<'div'>
 
 export const TabList = ({ children, className }: TabListProps) => {
   return (
     <div
-      className={qtJoin('relative flex', className)}
+      className={qtJoin('relative flex overflow-x-auto', className)}
       role="tablist"
       aria-orientation="horizontal"
     >

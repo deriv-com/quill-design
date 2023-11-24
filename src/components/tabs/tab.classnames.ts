@@ -1,5 +1,4 @@
 import { cva } from 'class-variance-authority'
-import { VariantClassNames } from 'types'
 import { TabSize } from './types'
 
 export const tabVariants = cva(

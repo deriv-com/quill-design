@@ -3,9 +3,11 @@ import { VariantProps } from 'class-variance-authority'
 import { ComponentProps } from 'react'
 import { tabVariants } from './tab.classnames'
 
-export type TabTriggerProps = ComponentProps<'button'> &
-  ExcludeAllNull<VariantProps<typeof tabVariants>> & {
-    icon?: QuillIconComponent
-  }
+export type TabProps = ComponentProps<'button'> &
+  ExcludeAllNull<VariantProps<typeof tabVariants>>
+
+export type TabTriggerProps = TabProps & {
+  icon?: QuillIconComponent
+}
 
 export type TabSize = NonNullable<TabTriggerProps['size']>
