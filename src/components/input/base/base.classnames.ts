@@ -7,7 +7,7 @@ import {
 } from '@deriv/quill-icons/Standalone'
 
 export const baseInputWrapperVariants = cva(
-  'w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600',
+  'w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600',
   {
     variants: {
       variant: {
@@ -51,7 +51,7 @@ export const baseInputWrapperVariants = cva(
 )
 
 export const baseInputVariants = cva(
-  'transition-opacity h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50',
+  'transition-opacity h-1200 bg-transparent leading-300 enabled:cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50',
   {
     variants: {
       alignment: {
