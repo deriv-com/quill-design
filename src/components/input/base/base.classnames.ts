@@ -76,7 +76,7 @@ export const baseInputVariants = cva(
 )
 // Make the label animation smoother
 export const baseInputLabelVariants = cva(
-  'transition-all duration-300 ease-[cubic-bezier(0.72, 0, 0.24, 1)] pointer-events-none absolute peer-placeholder-shown:text-100 peer-placeholder-shown:translate-y-50 peer-focus:-translate-y-full peer-focus:leading-100 peer-focus:text-50 peer-focus:h-900 peer-focus:gap-200 peer-[:not(placeholder-shown)]:-translate-y-full peer-[:not(placeholder-shown)]:leading-100 peer-[:not(placeholder-shown)]:text-50 disabled:text-opacity-black-300',
+  'transition-all duration-[160ms] ease-[cubic-bezier(0.72, 0, 0.24, 1)] pointer-events-none absolute peer-placeholder-shown:text-100 peer-placeholder-shown:translate-y-50 peer-focus:-translate-y-full peer-focus:leading-100 peer-focus:text-50 peer-focus:h-900 peer-focus:gap-200 peer-[:not(placeholder-shown)]:-translate-y-full peer-[:not(placeholder-shown)]:leading-100 peer-[:not(placeholder-shown)]:text-50 disabled:text-opacity-black-300',
   {
     variants: {
       status: {
