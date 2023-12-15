@@ -1,9 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react'
 import TextField from '.'
-import {
-  StandaloneCircleCheckBoldIcon,
-  StandaloneTriangleExclamationBoldIcon,
-} from '@deriv/quill-icons/Standalone'
+import { StandaloneCircleCheckBoldIcon } from '@deriv/quill-icons/Standalone'
+import { LabelPairedUserRegularIcon } from '@deriv/quill-icons'
 
 const meta = {
   title: 'Inputs/Text Field',
@@ -18,11 +16,6 @@ const meta = {
       },
     },
     className: {
-      table: {
-        disable: true,
-      },
-    },
-    statusIcon: {
       table: {
         disable: true,
       },
@@ -111,7 +104,6 @@ export const SuccessMessageTextFieldWithIcons: Story = {
     status: 'success',
     leftStatusMessage: 'Status message goes here',
     rightStatusMessage: '0/0',
-    statusIcon: StandaloneCircleCheckBoldIcon,
   },
 }
 export const ErrorMessageTextFieldWithIcons: Story = {
@@ -121,6 +113,16 @@ export const ErrorMessageTextFieldWithIcons: Story = {
     status: 'error',
     leftStatusMessage: 'Status message goes here',
     rightStatusMessage: '0/0',
-    statusIcon: StandaloneTriangleExclamationBoldIcon,
+  },
+}
+
+export const TextFieldWithDoubleIcons: Story = {
+  args: {
+    placeholder: 'Placeholder',
+    variant: 'outline',
+    status: 'success',
+    leftStatusMessage: 'Status message goes here',
+    rightStatusMessage: '0/0',
+    icon: LabelPairedUserRegularIcon,
   },
 }

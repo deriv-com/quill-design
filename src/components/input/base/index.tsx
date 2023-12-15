@@ -13,6 +13,7 @@ import {
   baseStatusMessageVariants,
   iconSize,
   statusIconColours,
+  statusIcons,
 } from './base.classnames'
 import { VariantProps } from 'class-variance-authority'
 import qtMerge, { qtJoin } from 'qtMerge'
@@ -70,7 +71,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       rightStatusMessage,
       textAlignment = 'left',
       label,
-      statusIcon: StatusIcon,
+      statusIcon: StatusIcon = statusIcons[status],
       onChange,
       ...rest
     },
@@ -106,7 +107,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
                 alignment: textAlignment,
               }),
             )}
-            disabled={!!disabled}
+            disabled={disabled}
             onChange={(e) => {
               setHasValue(!!e.target.value)
               onChange?.(e)
@@ -125,7 +126,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               {label}
             </label>
           )}
-          {StatusIcon && (
+          {StatusIcon && !disabled && (
             <div>
               <StatusIcon
                 {...iconSize[inputSize]}
@@ -134,12 +135,16 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             </div>
           )}
         </div>
-        <div className="flex justify-between pt-400">
+        <div className="flex justify-between pt-200">
           {leftStatusMessage && (
             <p
               key={leftStatusMessage}
               className={qtJoin(
-                baseStatusMessageVariants({ status, disabled }),
+                baseStatusMessageVariants({
+                  status,
+                  disabled,
+                  className: 'animate-drop-in',
+                }),
               )}
             >
               {leftStatusMessage}
@@ -147,7 +152,6 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           )}
           {rightStatusMessage && (
             <p
-              key={rightStatusMessage}
               className={qtJoin(
                 baseStatusMessageVariants({ status, className: 'self-end' }),
               )}
