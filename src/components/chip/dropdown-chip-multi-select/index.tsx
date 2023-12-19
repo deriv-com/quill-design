@@ -71,7 +71,7 @@ export const DropdownChipMultiSelect = forwardRef<
     }
 
     return (
-      <>
+      <div className="flex flex-col">
         <Listbox value={selectedItems} onChange={handleItemSelect} multiple>
           {({ open }) => (
             <>
@@ -118,7 +118,7 @@ export const DropdownChipMultiSelect = forwardRef<
             </>
           )}
         </Listbox>
-      </>
+      </div>
     )
   },
 )

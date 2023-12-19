@@ -1,3 +1,24 @@
+## [1.2.13](https://github.com/deriv-com/quill-design/compare/v1.2.12...v1.2.13) (2023-12-19)
+
+
+### 🐛 	 Bug Fixes
+
+* alignment issues for chip single select and multi-select ([55661f1](https://github.com/deriv-com/quill-design/commit/55661f183405e581fa7f8606923c10d72a769204))
+
+## [1.2.12](https://github.com/deriv-com/quill-design/compare/v1.2.11...v1.2.12) (2023-12-14)
+
+
+### ♻️ 	 Chores
+
+* added use mounted hook for action sheet ([9584473](https://github.com/deriv-com/quill-design/commit/95844731b587b60a0345fc3c7ca61473d7da8e48))
+
+## [1.2.11](https://github.com/deriv-com/quill-design/compare/v1.2.10...v1.2.11) (2023-12-14)
+
+
+### 🐛 	 Bug Fixes
+
+* grey line tab issue ([d963862](https://github.com/deriv-com/quill-design/commit/d9638628e5f435356e38142cac0724e462cbf3fa))
+
 ## [1.2.10](https://github.com/deriv-com/quill-design/compare/v1.2.9...v1.2.10) (2023-12-13)
 
 

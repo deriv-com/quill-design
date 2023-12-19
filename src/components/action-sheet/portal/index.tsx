@@ -1,11 +1,10 @@
-import { ComponentProps, useContext } from 'react'
+import { ComponentProps, useContext, useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import qtMerge from 'qtMerge'
 import HandleBar from '../handle-bar'
 import { actionSheetRootCVA } from '../action-sheet.classnames'
 import { useSwipeBlock } from 'hooks'
 import { ActionSheetContext } from '../root'
-import { useSsr } from 'usehooks-ts'
 
 type PortalProps = ComponentProps<'div'>
 
@@ -16,16 +15,24 @@ const Portal = ({ children, ...restProps }: PortalProps) => {
     show,
     onClose: handleClose,
   })
-  const { isServer } = useSsr()
 
-  if (isServer) return null
+  // TODO: This is a temp implementation
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  if (!isMounted) {
+    return null
+  }
 
   return (
     <>
       {createPortal(
         <>
           <div
-            className="pointer-events-none fixed inset-general-none z-10 flex select-none items-end justify-center overflow-x-hidden transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)] data-[state=close]:invisible"
+            className="pointer-events-none fixed inset-general-none z-50 flex select-none items-end justify-center overflow-x-hidden transition-all duration-[160ms] ease-[cubic-bezier(0.72,_0,_0.24,_1)] data-[state=close]:invisible"
             role="dialog"
             data-state={show ? 'open' : 'close'}
             {...restProps}
