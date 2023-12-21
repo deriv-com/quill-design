@@ -1,18 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import {
-  LabelPairedAndroidIcon,
-  LabelPairedAppleIcon,
-  LabelPairedCircleInfoBoldIcon,
-  LabelPairedPlaceholderRegularIcon,
+  LabelPairedAndroidMdIcon,
+  LabelPairedAppleMdIcon,
+  LabelPairedCircleInfoMdBoldIcon,
+  LabelPairedPlaceholderMdRegularIcon,
 } from '@deriv/quill-icons/LabelPaired'
 import Button from '.'
 import { QuillIconComponent } from 'types'
 
 const icons: Record<string, QuillIconComponent | undefined> = {
-  placeholder: LabelPairedPlaceholderRegularIcon,
-  'Circle info bold': LabelPairedCircleInfoBoldIcon,
-  Android: LabelPairedAndroidIcon,
-  Apple: LabelPairedAppleIcon,
+  placeholder: LabelPairedPlaceholderMdRegularIcon,
+  'Circle info bold': LabelPairedCircleInfoMdBoldIcon,
+  Android: LabelPairedAndroidMdIcon,
+  Apple: LabelPairedAppleMdIcon,
   none: undefined,
 }
 

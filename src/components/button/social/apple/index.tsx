@@ -1,5 +1,5 @@
 import { forwardRef } from 'react'
-import { SocialAppleBlackIcon } from '@deriv/quill-icons/Social'
+import { SocialAppleBlackIcon } from '@deriv/quill-icons'
 import qtMerge, { qtJoin } from 'qtMerge'
 import {
   SocialButtonVariantProps,

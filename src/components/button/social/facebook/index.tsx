@@ -1,5 +1,5 @@
 import { forwardRef } from 'react'
-import { SocialFacebookBrandIcon } from '@deriv/quill-icons/Social'
+import { SocialFacebookBrandIcon } from '@deriv/quill-icons'
 import qtMerge from 'qtMerge'
 import {
   SocialButtonClassesProps,

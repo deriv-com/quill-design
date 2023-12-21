@@ -1,18 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import {
-  LabelPairedAndroidIcon,
-  LabelPairedAppleIcon,
-  LabelPairedCircleInfoBoldIcon,
-  LabelPairedPlaceholderRegularIcon,
+  LabelPairedAndroidMdIcon,
+  LabelPairedAppleMdIcon,
+  LabelPairedCircleInfoMdBoldIcon,
+  LabelPairedPlaceholderMdRegularIcon,
 } from '@deriv/quill-icons/LabelPaired'
 import MockTab from './mocks/example'
 import { QuillIconComponent } from 'types'
 
 const icons: Record<string, QuillIconComponent | undefined> = {
-  placeholder: LabelPairedPlaceholderRegularIcon,
-  circleinfobold: LabelPairedCircleInfoBoldIcon,
-  Android: LabelPairedAndroidIcon,
-  Apple: LabelPairedAppleIcon,
+  placeholder: LabelPairedPlaceholderMdRegularIcon,
+  circleinfobold: LabelPairedCircleInfoMdBoldIcon,
+  Android: LabelPairedAndroidMdIcon,
+  Apple: LabelPairedAppleMdIcon,
 }
 const meta = {
   title: 'Components/Tabs',
@@ -50,7 +50,7 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     size: 'md',
-    icon: LabelPairedCircleInfoBoldIcon,
+    icon: LabelPairedCircleInfoMdBoldIcon,
     iconPosition: 'left',
   },
 }

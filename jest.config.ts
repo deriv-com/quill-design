@@ -16,10 +16,16 @@ const config: JestConfigWithTsJest = {
   resolver: 'ts-jest-resolver',
   moduleNameMapper: {
     '.(css|less|scss)$': 'identity-obj-proxy',
+    '^@deriv/quill-icons': 'node_modules/@deriv/quill-icons/dist',
+    '^@deriv/quill-icons/(.*)$': 'node_modules/@deriv/quill-icons/dist/$1',
     ...pathsToModuleNameMapper(compilerOptions.paths, {
       prefix: '<rootDir>/src',
     }),
   },
+  transformIgnorePatterns: [
+    'node_modules/(?!@deriv/quill-icons)',
+    'node_modules/(?!@deriv/quill-icons/*)',
+  ],
   moduleDirectories: ['node_modules', './test-utils', __dirname, './src'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   snapshotResolver: '<rootDir>/snapshot.resolver.js',

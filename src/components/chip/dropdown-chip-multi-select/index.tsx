@@ -4,8 +4,8 @@ import { Listbox, Transition } from '@headlessui/react'
 import SelectableChip from '../selectable-chip'
 import type { MultiSelectChipProps, TSingleSelectItem } from '../types'
 import {
-  LabelPairedSquareCheckFillIcon,
-  LabelPairedSquareRegularIcon,
+  LabelPairedSquareCheckMdFillIcon,
+  LabelPairedSquareMdRegularIcon,
 } from '@deriv/quill-icons/LabelPaired'
 import {
   chipDropdownPanelClassnames,
@@ -32,9 +32,9 @@ const Options = ({
         >
           <span>
             {selected ? (
-              <LabelPairedSquareCheckFillIcon />
+              <LabelPairedSquareCheckMdFillIcon />
             ) : (
-              <LabelPairedSquareRegularIcon />
+              <LabelPairedSquareMdRegularIcon />
             )}
           </span>
           <span>{item.label}</span>

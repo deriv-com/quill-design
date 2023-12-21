@@ -1,6 +1,6 @@
 import { render } from 'test-utils'
 import Button, { ButtonProps } from '.'
-import { LabelPairedAndroidIcon } from '@deriv/quill-icons/LabelPaired'
+import { LabelPairedAndroidMdIcon } from '@deriv/quill-icons/LabelPaired'
 import userEvent from '@testing-library/user-event'
 
 const BasicButtonVariants: ButtonProps['variant'][] = [
@@ -17,14 +17,14 @@ describe('BasicButton', () => {
 
   it('Should render BasicButton with Icon', () => {
     const { container } = render(
-      <Button icon={LabelPairedAndroidIcon}>Label</Button>,
+      <Button icon={LabelPairedAndroidMdIcon}>Label</Button>,
     )
     expect(container).toMatchSnapshot()
   })
 
   it('Should render BasicButton with Icon and IconPosition start', () => {
     const { container } = render(
-      <Button icon={LabelPairedAndroidIcon} iconPosition="start">
+      <Button icon={LabelPairedAndroidMdIcon} iconPosition="start">
         Label
       </Button>,
     )
@@ -33,7 +33,7 @@ describe('BasicButton', () => {
 
   it('Should render BasicButton with Icon and IconPosition end', () => {
     const { container } = render(
-      <Button icon={LabelPairedAndroidIcon} iconPosition="end">
+      <Button icon={LabelPairedAndroidMdIcon} iconPosition="end">
         Label
       </Button>,
     )
@@ -42,7 +42,7 @@ describe('BasicButton', () => {
 
   it('Should render BasicButton with Icon and IconPosition end and fullWidth', () => {
     const { container } = render(
-      <Button icon={LabelPairedAndroidIcon} iconPosition="end" fullWidth>
+      <Button icon={LabelPairedAndroidMdIcon} iconPosition="end" fullWidth>
         Label
       </Button>,
     )
@@ -52,7 +52,7 @@ describe('BasicButton', () => {
   it('Should render BasicButton with Icon and IconPosition end and fullWidth and isLoading', () => {
     const { container } = render(
       <Button
-        icon={LabelPairedAndroidIcon}
+        icon={LabelPairedAndroidMdIcon}
         iconPosition="end"
         fullWidth
         isLoading
@@ -66,7 +66,7 @@ describe('BasicButton', () => {
   it('Should render BasicButton with Icon and IconPosition end and fullWidth and isLoading and className=custom-class', () => {
     const { container } = render(
       <Button
-        icon={LabelPairedAndroidIcon}
+        icon={LabelPairedAndroidMdIcon}
         iconPosition="end"
         fullWidth
         isLoading

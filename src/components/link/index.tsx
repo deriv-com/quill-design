@@ -8,7 +8,7 @@ import {
   linkRightIconCva,
 } from './link.classnames'
 
-import { LabelPairedChevronRightRegularIcon } from '@deriv/quill-icons/LabelPaired'
+import { LabelPairedChevronRightMdRegularIcon } from '@deriv/quill-icons/LabelPaired'
 import { LinkProps } from './types'
 
 export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
@@ -41,7 +41,7 @@ export const Link = forwardRef<HTMLAnchorElement, LinkProps>(
         {children}
 
         {hasIcon && (
-          <LabelPairedChevronRightRegularIcon
+          <LabelPairedChevronRightMdRegularIcon
             className={qtJoin(linkRightIconCva({ colorStyle }))}
             data-testid="dt-link-chevron"
             {...LinkIconSizes[size]}

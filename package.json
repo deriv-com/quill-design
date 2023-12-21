@@ -110,7 +110,7 @@
     "typescript": "^5.2.2"
   },
   "peerDependencies": {
-    "@deriv/quill-icons": "^1.0.10",
+    "@deriv/quill-icons": "^1.1.3",
     "@headlessui/react": "^1.7.17",
     "@types/react": "^17.x || ^18.x",
     "@use-gesture/react": "^10.3.0",

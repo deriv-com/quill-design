@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { LabelPairedPlaceholderRegularIcon } from '@deriv/quill-icons/LabelPaired'
+import { LabelPairedPlaceholderMdRegularIcon } from '@deriv/quill-icons/LabelPaired'
 
 import Tag from '.'
 const meta = {
@@ -52,7 +52,7 @@ type Story = StoryObj<typeof meta>
 export const CustomTagFillWithIcon: Story = {
   args: {
     variant: 'custom',
-    icon: LabelPairedPlaceholderRegularIcon,
+    icon: LabelPairedPlaceholderMdRegularIcon,
     className:
       'bg-gradient-to-r from-solid-blue-100 via-solid-blue-300 to-solid-blue-500 text-solid-blue-1200',
     iconClassName: 'fill-solid-blue-1200',
@@ -72,7 +72,7 @@ export const CustomTagWithoutIcon: Story = {
 export const CustomTagOutlineWithoutIcon: Story = {
   args: {
     variant: 'outline',
-    icon: LabelPairedPlaceholderRegularIcon,
+    icon: LabelPairedPlaceholderMdRegularIcon,
     className: 'border-solid-red-1200 text-solid-red-1200',
     iconClassName: 'fill-solid-red-1200',
     isBold: false,
