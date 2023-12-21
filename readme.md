@@ -2,6 +2,8 @@
 
 ## Quill Design
 
+This is new version of Quill Design
+
 Deriv Quill Design UI Components
 
 ## Installation
