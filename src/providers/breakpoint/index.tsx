@@ -16,6 +16,11 @@ export const BreakpointProvider = ({ children }: ScreenProviderProps) => {
   const isLg = useMediaQuery(`(min-width: ${screens.lg})`)
   const isXl = useMediaQuery(`(min-width: ${screens.xl})`)
   const isXXl = useMediaQuery(`(min-width: ${screens['2xl']})`)
+  const isMobile = useMediaQuery(`(max-width: ${screens.md})`)
+  const isTablet = useMediaQuery(
+    `(min-width: ${screens.md}) and (max-width: ${screens.lg})`,
+  )
+  const isDesktop = useMediaQuery(`(min-width: ${screens.lg})`)
 
   const value: BreakpointContextValue = useMemo(() => {
     return {
@@ -25,8 +30,11 @@ export const BreakpointProvider = ({ children }: ScreenProviderProps) => {
       isLg,
       isXl,
       isXXl,
+      isMobile,
+      isTablet,
+      isDesktop,
     }
-  }, [isLg, isMd, isSm, isXXl, isXl, isXs])
+  }, [isDesktop, isLg, isMd, isMobile, isSm, isTablet, isXXl, isXl, isXs])
 
   return (
     <BreakpointContext.Provider value={value}>

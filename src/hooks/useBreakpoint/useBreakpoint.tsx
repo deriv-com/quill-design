@@ -89,4 +89,37 @@ describe('useBreakpoint', () => {
     expect(result.current.isXl).toBe(true)
     expect(result.current.isXXl).toBe(true)
   })
+
+  it('Should have isMobile as true with screen width less than 768px', () => {
+    setMedia({
+      width: '767px',
+    })
+    const { result } = renderHook(() => useBreakpoint())
+
+    expect(result.current.isMobile).toBe(true)
+    expect(result.current.isTablet).toBe(false)
+    expect(result.current.isDesktop).toBe(false)
+  })
+
+  it('Should have isTablet as true with screen width between 768px and 1024px', () => {
+    setMedia({
+      width: '800px',
+    })
+    const { result } = renderHook(() => useBreakpoint())
+
+    expect(result.current.isMobile).toBe(false)
+    expect(result.current.isTablet).toBe(true)
+    expect(result.current.isDesktop).toBe(false)
+  })
+
+  it('Should have isDesktop as true with screen width bigger than 1024px', () => {
+    setMedia({
+      width: '1100px',
+    })
+    const { result } = renderHook(() => useBreakpoint())
+
+    expect(result.current.isMobile).toBe(false)
+    expect(result.current.isTablet).toBe(false)
+    expect(result.current.isDesktop).toBe(true)
+  })
 })
