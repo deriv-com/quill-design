@@ -4,7 +4,7 @@ import {
   render as rtlRender,
   screen,
 } from 'test-utils'
-import { LabelPairedCircleInfoBoldIcon } from '@deriv/quill-icons/LabelPaired'
+import { LabelPairedCircleInfoMdBoldIcon } from '@deriv/quill-icons/LabelPaired'
 import Tab from '..'
 import { TabContextType } from '../container'
 import userEvent from '@testing-library/user-event'
@@ -34,7 +34,9 @@ describe('<Tab.Trigger/>', () => {
   it('should render the quill icon as children', () => {
     render(
       <Tab.Container id="tab">
-        <Tab.Trigger icon={LabelPairedCircleInfoBoldIcon}>trigger</Tab.Trigger>
+        <Tab.Trigger icon={LabelPairedCircleInfoMdBoldIcon}>
+          trigger
+        </Tab.Trigger>
       </Tab.Container>,
     )
     const triggerIcon = screen.getByTestId('dt-tab-trigger-icon')

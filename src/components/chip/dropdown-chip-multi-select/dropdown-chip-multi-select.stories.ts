@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import Chip from '.'
 import {
-  LabelPairedCircleInfoBoldIcon,
-  LabelPairedAndroidIcon,
-  LabelPairedAppleIcon,
+  LabelPairedCircleInfoMdBoldIcon,
+  LabelPairedAndroidMdIcon,
+  LabelPairedAppleMdIcon,
 } from '@deriv/quill-icons/LabelPaired'
 
 const icons: Record<string, object | null> = {
-  sample_1: LabelPairedCircleInfoBoldIcon,
-  sample_2: LabelPairedAndroidIcon,
-  sample_3: LabelPairedAppleIcon,
+  sample_1: LabelPairedCircleInfoMdBoldIcon,
+  sample_2: LabelPairedAndroidMdIcon,
+  sample_3: LabelPairedAppleMdIcon,
   none: null,
 }
 
