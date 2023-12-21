@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/deriv-com/quill-design/compare/v1.2.15...v1.3.0) (2023-12-21)
+
+
+### ⚙️ 	 Continuous Integrations
+
+* updated release action [skip ci] ([fb44b28](https://github.com/deriv-com/quill-design/commit/fb44b28ee0cd401d1e6535cf6f731902903e732d))
+
+
+### ✨ 	 Features
+
+* setting up new version ([7efedb4](https://github.com/deriv-com/quill-design/commit/7efedb415829d4f684b0df19c5e32b858996a7a4))
+
 ## [1.2.15](https://github.com/deriv-com/quill-design/compare/v1.2.14...v1.2.15) (2023-12-19)
 
 
