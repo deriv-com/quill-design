@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/deriv-com/quill-design/compare/v1.3.1...v1.3.2) (2023-12-22)
+
+
+### ♻️ 	 Chores
+
+* added sideEffects false to package.json ([20adb05](https://github.com/deriv-com/quill-design/commit/20adb05e15c496028814ba3a59106e014f7b0819))
+
 ## [1.3.1](https://github.com/deriv-com/quill-design/compare/v1.3.0...v1.3.1) (2023-12-21)
 
 
