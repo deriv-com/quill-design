@@ -55,7 +55,7 @@ export const DropdownChipSingleSelect = forwardRef<
     }
 
     return (
-      <>
+      <div className="flex flex-col">
         <Listbox value={selectedItem} onChange={handleItemSelect}>
           {({ open }) => (
             <>
@@ -97,7 +97,7 @@ export const DropdownChipSingleSelect = forwardRef<
             </>
           )}
         </Listbox>
-      </>
+      </div>
     )
   },
 )

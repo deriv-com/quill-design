@@ -7,6 +7,9 @@ export type BreakpointContextValue = {
   isLg: boolean
   isXl: boolean
   isXXl: boolean
+  isMobile: boolean
+  isTablet: boolean
+  isDesktop: boolean
 }
 
 export const BreakpointContext = createContext<BreakpointContextValue>({
@@ -16,6 +19,9 @@ export const BreakpointContext = createContext<BreakpointContextValue>({
   isLg: false,
   isXl: false,
   isXXl: false,
+  isMobile: false,
+  isTablet: false,
+  isDesktop: false,
 })
 
 export default BreakpointContext

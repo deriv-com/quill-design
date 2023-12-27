@@ -1,3 +1,25 @@
+## [1.2.15](https://github.com/deriv-com/quill-design/compare/v1.2.14...v1.2.15) (2023-12-19)
+
+
+### ♻️ 	 Chores
+
+* add device variable flags ([41cbcbf](https://github.com/deriv-com/quill-design/commit/41cbcbfd22e4d9ff0e07e40a71307bd2a92cb2ab))
+* init ([4a39e61](https://github.com/deriv-com/quill-design/commit/4a39e61448c030a76fcc71e2ca82fcc9a6030471))
+
+## [1.2.14](https://github.com/deriv-com/quill-design/compare/v1.2.13...v1.2.14) (2023-12-19)
+
+
+### 🐛 	 Bug Fixes
+
+* adding missing export for link component ([0432b26](https://github.com/deriv-com/quill-design/commit/0432b26f98f2728b33c230e863a9032f25042385))
+
+## [1.2.13](https://github.com/deriv-com/quill-design/compare/v1.2.12...v1.2.13) (2023-12-19)
+
+
+### 🐛 	 Bug Fixes
+
+* alignment issues for chip single select and multi-select ([55661f1](https://github.com/deriv-com/quill-design/commit/55661f183405e581fa7f8606923c10d72a769204))
+
 ## [1.2.12](https://github.com/deriv-com/quill-design/compare/v1.2.11...v1.2.12) (2023-12-14)
 
 
