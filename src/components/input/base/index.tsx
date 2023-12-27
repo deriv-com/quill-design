@@ -81,7 +81,6 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
     return (
       <div className="flex w-full flex-col">
         <div
-          data-has-value={hasValue}
           className={qtMerge(
             baseInputWrapperVariants({
               size: inputSize,
@@ -96,36 +95,39 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               <Icon {...iconSize[inputSize]} />
             </div>
           )}
-          <input
-            {...rest}
-            type={type}
-            className={qtJoin(
-              baseInputVariants({
-                variant,
-                size: inputSize,
-                status,
-                alignment: textAlignment,
-              }),
-            )}
-            disabled={disabled}
-            onChange={(e) => {
-              setHasValue(!!e.target.value)
-              onChange?.(e)
-            }}
-            ref={ref}
-          />
-
-          {label && inputSize === 'md' && (
-            <label
+          <div className="relative flex items-center">
+            <input
+              {...rest}
+              type={type}
               className={qtJoin(
-                baseInputLabelVariants({
+                baseInputVariants({
+                  variant,
+                  size: inputSize,
                   status,
+                  alignment: textAlignment,
                 }),
               )}
-            >
-              {label}
-            </label>
-          )}
+              data-has-value={hasValue}
+              disabled={disabled}
+              onChange={(e) => {
+                setHasValue(!!e.target.value)
+                onChange?.(e)
+              }}
+              ref={ref}
+            />
+
+            {label && inputSize === 'md' && (
+              <label
+                className={qtJoin(
+                  baseInputLabelVariants({
+                    status,
+                  }),
+                )}
+              >
+                {label}
+              </label>
+            )}
+          </div>
           {StatusIcon && !disabled && (
             <div>
               <StatusIcon

@@ -126,3 +126,10 @@ export const TextFieldWithDoubleIcons: Story = {
     icon: LabelPairedUserRegularIcon,
   },
 }
+export const TextFieldWithLabelAndIcons: Story = {
+  args: {
+    placeholder: 'Placeholder',
+    label: 'Label',
+    icon: LabelPairedUserRegularIcon,
+  },
+}

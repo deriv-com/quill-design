@@ -13,7 +13,7 @@ describe('TextField', () => {
     const input = screen.getByPlaceholderText('Placeholder')
     await userEvent.hover(input)
     expect(onHover).toHaveBeenCalledTimes(1)
-    expect(input.parentElement).toHaveClass(
+    expect(input.parentElement?.parentElement).toHaveClass(
       '[&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200',
     )
   })
@@ -29,7 +29,7 @@ describe('TextField', () => {
     const input = screen.getByPlaceholderText('Placeholder')
     await userEvent.hover(input)
     expect(onHover).toHaveBeenCalledTimes(1)
-    expect(input.parentElement).toHaveClass(
+    expect(input.parentElement?.parentElement).toHaveClass(
       '[&:has(input:enabled)]:hover:[&:not(:focus-within)]:bg-opacity-black-100',
     )
   })
