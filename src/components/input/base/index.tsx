@@ -95,7 +95,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               <Icon {...iconSize[inputSize]} />
             </div>
           )}
-          <div className="relative flex items-center">
+          <div className="relative mx-400 flex h-2100 items-center">
             <input
               {...rest}
               type={type}
