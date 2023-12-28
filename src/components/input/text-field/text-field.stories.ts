@@ -96,7 +96,7 @@ export const DoubleStatusMessageTextField: Story = {
     variant: 'outline',
     status: 'success',
     leftStatusMessage: 'Status message goes here',
-    rightStatusMessage: '0/0',
+    maxLength: 0,
   },
 }
 
@@ -106,7 +106,7 @@ export const SuccessMessageTextFieldWithIcons: Story = {
     variant: 'outline',
     status: 'success',
     leftStatusMessage: 'Status message goes here',
-    rightStatusMessage: '0/0',
+    maxLength: 0,
   },
 }
 export const ErrorMessageTextFieldWithIcons: Story = {
@@ -115,7 +115,7 @@ export const ErrorMessageTextFieldWithIcons: Story = {
     variant: 'outline',
     status: 'error',
     leftStatusMessage: 'Status message goes here',
-    rightStatusMessage: '0/0',
+    maxLength: 0,
   },
 }
 
@@ -125,7 +125,7 @@ export const TextFieldWithDoubleIcons: Story = {
     variant: 'outline',
     status: 'success',
     leftStatusMessage: 'Status message goes here',
-    rightStatusMessage: '0/0',
+    maxLength: 1,
     icon: LabelPairedUserRegularIcon,
   },
 }

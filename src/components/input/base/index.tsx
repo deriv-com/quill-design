@@ -51,7 +51,6 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   disabled?: boolean
   variant?: InputVariant
   leftStatusMessage?: string
-  rightStatusMessage?: string
   textAlignment?: InputTextAlignment
   label?: string
   value?: string
@@ -68,7 +67,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       variant = 'outline',
       icon: Icon,
       leftStatusMessage,
-      rightStatusMessage,
+      maxLength,
       textAlignment = 'left',
       label,
       statusIcon: StatusIcon = statusIcons[status],
@@ -77,7 +76,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
     },
     ref,
   ) => {
-    const [hasValue, setHasValue] = useState(false)
+    const [characterCount, setCharacterCount] = useState(0)
     return (
       <div className="flex w-full flex-col">
         <div
@@ -99,6 +98,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             <input
               {...rest}
               type={type}
+              maxLength={maxLength}
               className={qtJoin(
                 baseInputVariants({
                   variant,
@@ -107,10 +107,10 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
                   alignment: textAlignment,
                 }),
               )}
-              data-has-value={hasValue}
+              data-has-value={!!characterCount}
               disabled={disabled}
               onChange={(e) => {
-                setHasValue(!!e.target.value)
+                setCharacterCount(e.target.value.length)
                 onChange?.(e)
               }}
               ref={ref}
@@ -152,13 +152,13 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               {leftStatusMessage}
             </p>
           )}
-          {rightStatusMessage && (
+          {Number(maxLength) >= 0 && (
             <p
               className={qtJoin(
                 baseStatusMessageVariants({ status, className: 'self-end' }),
               )}
             >
-              {rightStatusMessage}
+              {`${characterCount}/${maxLength}`}
             </p>
           )}
         </div>

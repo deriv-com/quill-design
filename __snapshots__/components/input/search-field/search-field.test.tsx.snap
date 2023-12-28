@@ -6,7 +6,7 @@ exports[`SearchField It should render a SearchField with a given classname and t
     class="flex w-full flex-col"
   >
     <div
-      class="w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 border-75 px-800 h-2800 bg-opacity-black-75 focus-within:bg-opacity-black-75 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400 hover:bg-opacity-black-100 bg-transparent"
+      class="w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-160 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 border-75 px-800 h-2800 bg-opacity-black-75 focus-within:bg-opacity-black-75 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400 hover:bg-opacity-black-100 bg-transparent"
     >
       <div>
         <svg
@@ -45,7 +45,7 @@ exports[`SearchField It should render a TextField with error status 1`] = `
     class="flex w-full flex-col"
   >
     <div
-      class="w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 border-75 px-800 h-2800 text-opacity-red-600 border-opacity-red-600 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-red-800 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-red-800 focus-within:text-solid-red-900 focus-within:border-solid-red-900"
+      class="w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-160 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 border-75 px-800 h-2800 text-opacity-red-600 border-opacity-red-600 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-red-800 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-red-800 focus-within:text-solid-red-900 focus-within:border-solid-red-900"
     >
       <div>
         <svg
@@ -99,7 +99,7 @@ exports[`SearchField It should render a TextField with success status 1`] = `
     class="flex w-full flex-col"
   >
     <div
-      class="w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 border-75 px-800 h-2800 text-opacity-green-600 border-opacity-green-600 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-green-800 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-green-800 focus-within:text-solid-green-900 focus-within:border-solid-green-900"
+      class="w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-160 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 border-75 px-800 h-2800 text-opacity-green-600 border-opacity-green-600 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-green-800 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-green-800 focus-within:text-solid-green-900 focus-within:border-solid-green-900"
     >
       <div>
         <svg
@@ -153,7 +153,7 @@ exports[`SearchField It should render a default SearchField 1`] = `
     class="flex w-full flex-col"
   >
     <div
-      class="w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 border-75 px-800 h-2800 bg-opacity-black-75 focus-within:bg-opacity-black-75 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400 hover:bg-opacity-black-100"
+      class="w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-160 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 border-75 px-800 h-2800 bg-opacity-black-75 focus-within:bg-opacity-black-75 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400 hover:bg-opacity-black-100"
     >
       <div>
         <svg

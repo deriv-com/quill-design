@@ -7,7 +7,7 @@ import {
 } from '@deriv/quill-icons/Standalone'
 
 export const baseInputWrapperVariants = cva(
-  'w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms]',
+  'w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-160',
   {
     variants: {
       variant: {
@@ -76,7 +76,7 @@ export const baseInputVariants = cva(
 )
 // Make the label animation smoother
 export const baseInputLabelVariants = cva(
-  'transition-all duration-[160ms] ease-linear-[cubic-bezier(0.72, 0, 0.24, 1)] pointer-events-none absolute peer-placeholder-shown:text-100 peer-focus:leading-100 peer-focus:text-50 peer-[:not(placeholder-shown)]:leading-100 peer-[:not(placeholder-shown)]:text-50 disabled:text-opacity-black-300 group-[data-has-value=true]:-translate-y-1/2 peer-focus:-translate-y-1/2 peer-data-[has-value=true]:-translate-y-1/2',
+  'transition-transform duration-160 ease-[cubic-bezier(0.72, 0, 0.24, 1)] pointer-events-none absolute peer-placeholder-shown:text-100 peer-focus:leading-100 peer-focus:text-50 peer-[:not(placeholder-shown)]:leading-100 peer-[:not(placeholder-shown)]:text-50 disabled:text-opacity-black-300 group-[data-has-value=true]:-translate-y-1/2 peer-focus:-translate-y-1/2 peer-data-[has-value=true]:-translate-y-1/2',
   {
     variants: {
       status: {
