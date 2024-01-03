@@ -76,7 +76,7 @@ export const baseInputVariants = cva(
 )
 
 export const baseInputLabelVariants = cva(
-  'transition-[font-size, top] duration-160 ease-[cubic-bezier(0.72, 0, 0.24, 1)] absolute top-500 text-100 peer-focus:top-75 peer-data-[has-value=true]:top-75 peer-focus:text-50 peer-data-[has-value=true]:text-50 disabled:text-opacity-black-300 pointer-events-none w-full peer-focus:leading-100 peer-[:not(placeholder-shown)]:leading-100',
+  'transition-[font-size, top] duration-160 ease-[cubic-bezier(0.72, 0, 0.24, 1)] absolute top-600 text-100 peer-focus:top-75 peer-data-[has-value=true]:top-75 peer-focus:text-50 peer-data-[has-value=true]:text-50 disabled:text-opacity-black-300 pointer-events-none w-full peer-focus:leading-100 peer-[:not(placeholder-shown)]:leading-100',
   {
     variants: {
       status: {
