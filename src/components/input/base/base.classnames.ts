@@ -1,14 +1,19 @@
 import { cva } from 'class-variance-authority'
 import { InputSize, type InputStatus } from '.'
+import { QuillIconComponent } from 'types'
+import {
+  StandaloneCircleCheckBoldIcon,
+  StandaloneTriangleExclamationBoldIcon,
+} from '@deriv/quill-icons/Standalone'
 
 export const baseInputWrapperVariants = cva(
-  'w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer  [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600',
+  'w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-160',
   {
     variants: {
       variant: {
-        fill: '[&:has(input:disabled)]:bg-opacity-black-75 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-300 focus-within:bg-opacity-black-75 focus-within:text-solid-slate-1400 focus-within:border-solid-slate-1400 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:bg-opacity-black-100',
+        fill: 'border-transparent [&:has(input:disabled)]:bg-opacity-black-75 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-300 focus-within:bg-opacity-black-75 focus-within:text-solid-slate-1400 focus-within:border-solid-slate-1400 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:bg-opacity-black-100',
         outline:
-          'bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100',
+          'bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 border-75',
       },
       size: {
         sm: 'px-400 h-1600',
@@ -16,7 +21,7 @@ export const baseInputWrapperVariants = cva(
       },
       status: {
         neutral:
-          ' text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400',
+          'bg-opacity-black-75 focus-within:bg-opacity-black-75 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400 hover:bg-opacity-black-100',
         error:
           'text-opacity-red-600 border-opacity-red-600 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-red-800 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-red-800 focus-within:text-solid-red-900 focus-within:border-solid-red-900',
         success:
@@ -46,7 +51,7 @@ export const baseInputWrapperVariants = cva(
 )
 
 export const baseInputVariants = cva(
-  'h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50',
+  'peer transition-opacity h-1200 bg-transparent leading-300 grow enabled:cursor-pointer disabled:cursor-not-allowed focus:outline-none active:outline-none focus:text-solid-slate-1400 focus:[&:has(~label)]:self-end data-[has-value=true]:[&:has(~label)]:self-end hover:text-opacity-black-600  placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50',
   {
     variants: {
       alignment: {
@@ -71,7 +76,7 @@ export const baseInputVariants = cva(
 )
 
 export const baseInputLabelVariants = cva(
-  'transition-all duration-[160ms] ease-[cubic-bezier(0.72, 0, 0.24, 1)] pointer-events-none absolute peer-placeholder-shown:text-100 peer-placeholder-shown:translate-y-50 peer-focus:-translate-y-full peer-focus:leading-100 peer-focus:text-50 peer-focus:h-900 peer-focus:gap-200 peer-[:not(placeholder-shown)]:-translate-y-full peer-[:not(placeholder-shown)]:leading-100 peer-[:not(placeholder-shown)]:text-50',
+  'transition-[font-size, top] duration-160 ease-[cubic-bezier(0.72, 0, 0.24, 1)] absolute top-600 text-100 peer-focus:top-75 peer-data-[has-value=true]:top-75 peer-focus:text-50 peer-data-[has-value=true]:text-50 disabled:text-opacity-black-300 pointer-events-none w-full peer-focus:leading-100 peer-[:not(placeholder-shown)]:leading-100',
   {
     variants: {
       status: {
@@ -82,9 +87,8 @@ export const baseInputLabelVariants = cva(
     },
   },
 )
-
 export const baseStatusMessageVariants = cva(
-  'py-50 px-800 text-50 leading-100 font-regular animate-drop-in',
+  'py-50 px-800 text-50 leading-100 font-regular',
   {
     variants: {
       status: {
@@ -116,4 +120,10 @@ export const iconSize: Record<
 > = {
   sm: { width: 24, height: 24 },
   md: { width: 24, height: 24 },
+}
+
+export const statusIcons: Record<InputStatus, QuillIconComponent | null> = {
+  neutral: null,
+  error: StandaloneTriangleExclamationBoldIcon,
+  success: StandaloneCircleCheckBoldIcon,
 }

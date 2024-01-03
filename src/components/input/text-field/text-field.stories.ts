@@ -1,9 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react'
 import TextField from '.'
+import { StandaloneCircleCheckBoldIcon } from '@deriv/quill-icons/Standalone'
 import {
-  StandaloneCircleCheckBoldIcon,
-  StandaloneTriangleExclamationBoldIcon,
-} from '@deriv/quill-icons/Standalone'
+  LabelPairedPlaceholderBoldIcon,
+  LabelPairedUserRegularIcon,
+} from '@deriv/quill-icons'
 
 const meta = {
   title: 'Inputs/Text Field',
@@ -18,11 +19,6 @@ const meta = {
       },
     },
     className: {
-      table: {
-        disable: true,
-      },
-    },
-    statusIcon: {
       table: {
         disable: true,
       },
@@ -100,18 +96,17 @@ export const DoubleStatusMessageTextField: Story = {
     variant: 'outline',
     status: 'success',
     leftStatusMessage: 'Status message goes here',
-    rightStatusMessage: '0/0',
+    maxLength: 10,
   },
 }
 
-export const SuccessMessageTextFieldWithIcons: Story = {
+export const SuccessMessageTextFieldWithIcon: Story = {
   args: {
     placeholder: 'Placeholder',
     variant: 'outline',
     status: 'success',
     leftStatusMessage: 'Status message goes here',
-    rightStatusMessage: '0/0',
-    statusIcon: StandaloneCircleCheckBoldIcon,
+    maxLength: 10,
   },
 }
 export const ErrorMessageTextFieldWithIcons: Story = {
@@ -120,7 +115,22 @@ export const ErrorMessageTextFieldWithIcons: Story = {
     variant: 'outline',
     status: 'error',
     leftStatusMessage: 'Status message goes here',
-    rightStatusMessage: '0/0',
-    statusIcon: StandaloneTriangleExclamationBoldIcon,
+  },
+}
+
+export const TextFieldWithDoubleIcons: Story = {
+  args: {
+    placeholder: 'Placeholder',
+    variant: 'outline',
+    status: 'success',
+    leftStatusMessage: 'Status message goes here',
+    icon: LabelPairedUserRegularIcon,
+  },
+}
+export const TextFieldWithLabelAndIcons: Story = {
+  args: {
+    placeholder: 'Placeholder',
+    label: 'Label',
+    icon: LabelPairedPlaceholderBoldIcon,
   },
 }

@@ -22,6 +22,9 @@ export default {
       animation: {
         'drop-in': 'drop-in 160ms cubic-bezier(0.72, 0, 0.24, 1)',
       },
+      transitionDuration: {
+        160: '160ms',
+      },
     },
   },
   plugins: [],

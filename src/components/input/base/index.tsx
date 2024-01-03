@@ -13,6 +13,7 @@ import {
   baseStatusMessageVariants,
   iconSize,
   statusIconColours,
+  statusIcons,
 } from './base.classnames'
 import { VariantProps } from 'class-variance-authority'
 import qtMerge, { qtJoin } from 'qtMerge'
@@ -50,7 +51,6 @@ export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   disabled?: boolean
   variant?: InputVariant
   leftStatusMessage?: string
-  rightStatusMessage?: string
   textAlignment?: InputTextAlignment
   label?: string
   value?: string
@@ -67,20 +67,19 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       variant = 'outline',
       icon: Icon,
       leftStatusMessage,
-      rightStatusMessage,
+      maxLength,
       textAlignment = 'left',
       label,
-      statusIcon: StatusIcon,
+      statusIcon: StatusIcon = statusIcons[status],
       onChange,
       ...rest
     },
     ref,
   ) => {
-    const [hasValue, setHasValue] = useState(false)
+    const [characterCount, setCharacterCount] = useState(0)
     return (
       <div className="flex w-full flex-col">
         <div
-          data-has-value={hasValue}
           className={qtMerge(
             baseInputWrapperVariants({
               size: inputSize,
@@ -95,37 +94,41 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
               <Icon {...iconSize[inputSize]} />
             </div>
           )}
-          <input
-            {...rest}
-            type={type}
-            className={qtJoin(
-              baseInputVariants({
-                variant,
-                size: inputSize,
-                status,
-                alignment: textAlignment,
-              }),
-            )}
-            disabled={!!disabled}
-            onChange={(e) => {
-              setHasValue(!!e.target.value)
-              onChange?.(e)
-            }}
-            ref={ref}
-          />
-
-          {label && inputSize === 'md' && (
-            <label
+          <div className="relative mx-400 flex h-2100 items-center">
+            <input
+              {...rest}
+              type={type}
+              maxLength={maxLength}
               className={qtJoin(
-                baseInputLabelVariants({
+                baseInputVariants({
+                  variant,
+                  size: inputSize,
                   status,
+                  alignment: textAlignment,
                 }),
               )}
-            >
-              {label}
-            </label>
-          )}
-          {StatusIcon && (
+              data-has-value={!!characterCount}
+              disabled={disabled}
+              onChange={(e) => {
+                setCharacterCount(e.target.value.length)
+                onChange?.(e)
+              }}
+              ref={ref}
+            />
+
+            {label && inputSize === 'md' && (
+              <label
+                className={qtJoin(
+                  baseInputLabelVariants({
+                    status,
+                  }),
+                )}
+              >
+                {label}
+              </label>
+            )}
+          </div>
+          {StatusIcon && !disabled && (
             <div>
               <StatusIcon
                 {...iconSize[inputSize]}
@@ -134,25 +137,28 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             </div>
           )}
         </div>
-        <div className="flex justify-between pt-400">
+        <div className="flex justify-between pt-200">
           {leftStatusMessage && (
             <p
               key={leftStatusMessage}
               className={qtJoin(
-                baseStatusMessageVariants({ status, disabled }),
+                baseStatusMessageVariants({
+                  status,
+                  disabled,
+                  className: 'animate-drop-in',
+                }),
               )}
             >
               {leftStatusMessage}
             </p>
           )}
-          {rightStatusMessage && (
+          {Number(maxLength) >= 0 && (
             <p
-              key={rightStatusMessage}
               className={qtJoin(
                 baseStatusMessageVariants({ status, className: 'self-end' }),
               )}
             >
-              {rightStatusMessage}
+              {`${characterCount}/${maxLength}`}
             </p>
           )}
         </div>
