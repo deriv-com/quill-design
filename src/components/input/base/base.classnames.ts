@@ -51,7 +51,7 @@ export const baseInputWrapperVariants = cva(
 )
 
 export const baseInputVariants = cva(
-  'transition-opacity h-1200 bg-transparent leading-300 enabled:cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 focus:[&:has(~label)]:translate-y-1/2 data-[has-value=true]:[&:has(~label)]:translate-y-1/2',
+  'peer transition-opacity h-1200 bg-transparent leading-300 grow enabled:cursor-pointer disabled:cursor-not-allowed focus:outline-none active:outline-none focus:text-solid-slate-1400 focus:[&:has(~label)]:self-end data-[has-value=true]:[&:has(~label)]:self-end hover:text-opacity-black-600  placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50',
   {
     variants: {
       alignment: {
@@ -74,9 +74,9 @@ export const baseInputVariants = cva(
     },
   },
 )
-// Make the label animation smoother
+
 export const baseInputLabelVariants = cva(
-  'transition-transform duration-160 ease-[cubic-bezier(0.72, 0, 0.24, 1)] pointer-events-none absolute peer-placeholder-shown:text-100 peer-focus:leading-100 peer-focus:text-50 peer-[:not(placeholder-shown)]:leading-100 peer-[:not(placeholder-shown)]:text-50 disabled:text-opacity-black-300 group-[data-has-value=true]:-translate-y-1/2 peer-focus:-translate-y-1/2 peer-data-[has-value=true]:-translate-y-1/2',
+  'transition-[font-size, top] duration-160 ease-[cubic-bezier(0.72, 0, 0.24, 1)] absolute top-500 text-100 peer-focus:top-75 peer-data-[has-value=true]:top-75 peer-focus:text-50 peer-data-[has-value=true]:text-50 disabled:text-opacity-black-300 pointer-events-none w-full peer-focus:leading-100 peer-[:not(placeholder-shown)]:leading-100',
   {
     variants: {
       status: {
