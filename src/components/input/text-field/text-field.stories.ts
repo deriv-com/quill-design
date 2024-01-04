@@ -1,10 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react'
 import TextField from '.'
-import { StandaloneCircleCheckBoldIcon } from '@deriv/quill-icons/Standalone'
 import {
-  LabelPairedPlaceholderBoldIcon,
-  LabelPairedUserRegularIcon,
-} from '@deriv/quill-icons'
+  StandaloneCircleCheckBoldIcon,
+  StandalonePlaceholderBoldIcon,
+  StandaloneUserBoldIcon,
+} from '@deriv/quill-icons/Standalone'
 
 const meta = {
   title: 'Inputs/Text Field',
@@ -124,13 +124,13 @@ export const TextFieldWithDoubleIcons: Story = {
     variant: 'outline',
     status: 'success',
     leftStatusMessage: 'Status message goes here',
-    icon: LabelPairedUserRegularIcon,
+    icon: StandaloneUserBoldIcon,
   },
 }
 export const TextFieldWithLabelAndIcons: Story = {
   args: {
     placeholder: 'Placeholder',
     label: 'Label',
-    icon: LabelPairedPlaceholderBoldIcon,
+    icon: StandalonePlaceholderBoldIcon,
   },
 }
