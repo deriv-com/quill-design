@@ -22,7 +22,7 @@ describe('Input', () => {
   })
   it('It should render an Input with status messages', () => {
     const { container } = render(
-      <Input leftStatusMessage="Message goes here" rightStatusMessage="0/0" />,
+      <Input leftStatusMessage="Message goes here" maxLength={0} />,
     )
     expect(container).toMatchSnapshot()
   })

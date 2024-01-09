@@ -6,8 +6,7 @@ exports[`SearchField It should render a SearchField with a given classname and t
     class="flex w-full flex-col"
   >
     <div
-      class="w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400 bg-transparent"
-      data-has-value="false"
+      class="w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-160 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 border-75 px-800 h-2800 bg-opacity-black-75 focus-within:bg-opacity-black-75 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400 hover:bg-opacity-black-100 bg-transparent"
     >
       <div>
         <svg
@@ -23,13 +22,18 @@ exports[`SearchField It should render a SearchField with a given classname and t
           />
         </svg>
       </div>
-      <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
-        type="Search"
-      />
+      <div
+        class="relative mx-400 flex h-2100 items-center"
+      >
+        <input
+          class="peer transition-opacity h-1200 bg-transparent leading-300 grow enabled:cursor-pointer disabled:cursor-not-allowed focus:outline-none active:outline-none focus:text-solid-slate-1400 focus:[&:has(~label)]:self-end data-[has-value=true]:[&:has(~label)]:self-end hover:text-opacity-black-600  placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
+          data-has-value="false"
+          type="Search"
+        />
+      </div>
     </div>
     <div
-      class="flex justify-between pt-400"
+      class="flex justify-between pt-200"
     />
   </div>
 </div>
@@ -41,8 +45,7 @@ exports[`SearchField It should render a TextField with error status 1`] = `
     class="flex w-full flex-col"
   >
     <div
-      class="w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-red-600 border-opacity-red-600 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-red-800 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-red-800 focus-within:text-solid-red-900 focus-within:border-solid-red-900"
-      data-has-value="false"
+      class="w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-160 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 border-75 px-800 h-2800 text-opacity-red-600 border-opacity-red-600 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-red-800 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-red-800 focus-within:text-solid-red-900 focus-within:border-solid-red-900"
     >
       <div>
         <svg
@@ -58,13 +61,33 @@ exports[`SearchField It should render a TextField with error status 1`] = `
           />
         </svg>
       </div>
-      <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
-        type="search"
-      />
+      <div
+        class="relative mx-400 flex h-2100 items-center"
+      >
+        <input
+          class="peer transition-opacity h-1200 bg-transparent leading-300 grow enabled:cursor-pointer disabled:cursor-not-allowed focus:outline-none active:outline-none focus:text-solid-slate-1400 focus:[&:has(~label)]:self-end data-[has-value=true]:[&:has(~label)]:self-end hover:text-opacity-black-600  placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
+          data-has-value="false"
+          type="search"
+        />
+      </div>
+      <div>
+        <svg
+          class="fill-solid-red-900"
+          height="24"
+          role="img"
+          viewBox="0 0 32 32"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.688 9.781 7.952 22.516a.556.556 0 0 0-.078.312c.026.339.221.521.586.547h15.117c.339-.026.521-.208.547-.547a.693.693 0 0 0-.078-.312L16.312 9.78A.371.371 0 0 0 16 9.625a.371.371 0 0 0-.313.156Zm-1.602-.976c.469-.677 1.107-1.029 1.914-1.055.833.026 1.471.378 1.914 1.055l7.734 12.734c.235.39.352.82.352 1.29-.026.676-.26 1.25-.703 1.718-.469.443-1.042.677-1.719.703H8.461c-.703-.026-1.29-.26-1.758-.703-.443-.469-.677-1.042-.703-1.719 0-.469.117-.898.352-1.289l7.734-12.734Zm3.164 12.07c0 .365-.117.664-.352.898-.234.235-.533.352-.898.352s-.664-.117-.898-.352c-.235-.234-.352-.533-.352-.898s.117-.664.352-.898c.234-.235.533-.352.898-.352s.664.117.898.352c.235.234.352.533.352.898Zm-.313-7.188v3.75c-.052.573-.364.886-.937.938-.573-.052-.885-.365-.938-.938v-3.75c.053-.572.365-.885.938-.937.573.052.885.365.938.938Z"
+            fill-opacity="0.72"
+          />
+        </svg>
+      </div>
     </div>
     <div
-      class="flex justify-between pt-400"
+      class="flex justify-between pt-200"
     />
   </div>
 </div>
@@ -76,8 +99,7 @@ exports[`SearchField It should render a TextField with success status 1`] = `
     class="flex w-full flex-col"
   >
     <div
-      class="w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-green-600 border-opacity-green-600 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-green-800 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-green-800 focus-within:text-solid-green-900 focus-within:border-solid-green-900"
-      data-has-value="false"
+      class="w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-160 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 border-75 px-800 h-2800 text-opacity-green-600 border-opacity-green-600 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-green-800 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-green-800 focus-within:text-solid-green-900 focus-within:border-solid-green-900"
     >
       <div>
         <svg
@@ -93,13 +115,33 @@ exports[`SearchField It should render a TextField with success status 1`] = `
           />
         </svg>
       </div>
-      <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
-        type="search"
-      />
+      <div
+        class="relative mx-400 flex h-2100 items-center"
+      >
+        <input
+          class="peer transition-opacity h-1200 bg-transparent leading-300 grow enabled:cursor-pointer disabled:cursor-not-allowed focus:outline-none active:outline-none focus:text-solid-slate-1400 focus:[&:has(~label)]:self-end data-[has-value=true]:[&:has(~label)]:self-end hover:text-opacity-black-600  placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
+          data-has-value="false"
+          type="search"
+        />
+      </div>
+      <div>
+        <svg
+          class="fill-solid-green-900"
+          height="24"
+          role="img"
+          viewBox="0 0 32 32"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M16 8.375c-1.484 0-2.838.365-4.063 1.094-1.223.703-2.213 1.693-2.968 2.969A8.062 8.062 0 0 0 7.875 16.5c0 1.432.365 2.787 1.094 4.063.755 1.276 1.745 2.265 2.969 2.968 1.223.73 2.578 1.094 4.062 1.094 1.484 0 2.838-.365 4.063-1.094 1.224-.703 2.213-1.692 2.968-2.968a8.061 8.061 0 0 0 1.094-4.063 8.061 8.061 0 0 0-1.094-4.063c-.755-1.275-1.744-2.265-2.968-2.968-1.224-.73-2.579-1.094-4.063-1.094ZM16 26.5c-1.823-.026-3.49-.469-5-1.328-1.51-.886-2.734-2.11-3.672-3.672C6.443 19.912 6 18.245 6 16.5s.443-3.412 1.328-5C8.266 9.937 9.49 8.714 11 7.828c1.51-.86 3.177-1.302 5-1.328 1.823.026 3.49.469 5 1.328 1.51.886 2.734 2.11 3.672 3.672.885 1.588 1.328 3.255 1.328 5s-.443 3.412-1.328 5c-.938 1.563-2.162 2.787-3.672 3.672-1.51.86-3.177 1.302-5 1.328Zm4.414-11.836-5 5c-.443.365-.885.365-1.328 0l-2.5-2.5c-.365-.443-.365-.885 0-1.328.443-.365.885-.365 1.328 0l1.836 1.836 4.336-4.336c.443-.365.885-.365 1.328 0 .365.443.365.885 0 1.328Z"
+            fill-opacity="0.72"
+          />
+        </svg>
+      </div>
     </div>
     <div
-      class="flex justify-between pt-400"
+      class="flex justify-between pt-200"
     />
   </div>
 </div>
@@ -111,8 +153,7 @@ exports[`SearchField It should render a default SearchField 1`] = `
     class="flex w-full flex-col"
   >
     <div
-      class="w-full rounded-400 inline-flex items-center py-50 border-75 overflow-hidden font-sans relative cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-[160ms] focus-within:[&:has(label)]:pt-600 data-[has-value=true]:[&:has(label)]:pt-600 bg-solid-slate-50 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 px-800 h-2800 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400"
-      data-has-value="false"
+      class="w-full rounded-400 inline-flex items-center focus-within:border-75 overflow-hidden font-sans relative [&:has(input:enabled)]:cursor-pointer [&:has(input:disabled)]:cursor-not-allowed hover:transition-[border] hover:ease-[cubic-bezier(0.72, 0, 0.24, 1)] hover:duration-160 [&:has(input:disabled)]:bg-solid-slate-50 [&:has(input:disabled)]:text-opacity-black-100 [&:has(input:disabled)]:border-opacity-black-100 border-75 px-800 h-2800 bg-opacity-black-75 focus-within:bg-opacity-black-75 text-opacity-black-100 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:text-opacity-black-200 [&:has(input:enabled)]:hover:[&:not(:focus-within)]:border-opacity-black-200 focus-within:border-solid-slate-1400 focus-within:text-solid-slate-1400 hover:bg-opacity-black-100"
     >
       <div>
         <svg
@@ -128,13 +169,18 @@ exports[`SearchField It should render a default SearchField 1`] = `
           />
         </svg>
       </div>
-      <input
-        class="h-1200 bg-transparent leading-300 cursor-pointer peer grow disabled:cursor-not-allowed focus:outline-none focus:text-solid-slate-1400 hover:text-opacity-black-600 placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
-        type="search"
-      />
+      <div
+        class="relative mx-400 flex h-2100 items-center"
+      >
+        <input
+          class="peer transition-opacity h-1200 bg-transparent leading-300 grow enabled:cursor-pointer disabled:cursor-not-allowed focus:outline-none active:outline-none focus:text-solid-slate-1400 focus:[&:has(~label)]:self-end data-[has-value=true]:[&:has(~label)]:self-end hover:text-opacity-black-600  placeholder-shown:text-typography-disabled [&:not(placeholder-shown)]:text-opacity-black-600 disabled:text-opacity-black-300 [&:has(~label)]:text-100 [&:has(~label)]:placeholder:text-transparent [&:has(~label)]:focus:placeholder-opacity-black-300 [&::-webkit-search-decoration]:hidden [&::-webkit-search-cancel-button]:hidden [&::-webkit-search-results-button]:hidden [&::-webkit-search-results-decoration]:hidden [&::-ms-clear]:hidden [&::-ms-clear]:w-50 [&::-ms-clear]:h-50 [&::-ms-reveal]:hidden [&::-ms-reveal]:w-50 [&::-ms-reveal]:h-50 text-left h-1200"
+          data-has-value="false"
+          type="search"
+        />
+      </div>
     </div>
     <div
-      class="flex justify-between pt-400"
+      class="flex justify-between pt-200"
     />
   </div>
 </div>
