@@ -1,3 +1,24 @@
+## [1.2.16](https://github.com/deriv-com/quill-design/compare/v1.2.15...v1.2.16) (2024-01-09)
+
+
+### ♻️ 	 Chores
+
+* added icon component for trigger ([afff989](https://github.com/deriv-com/quill-design/commit/afff9893033c64d4b5abb80232363fb37145563e))
+* added isOpen props ([3c4d7f3](https://github.com/deriv-com/quill-design/commit/3c4d7f32c3ce0532353d43d8cf8562c91d1549fd))
+* exported action sheet context consumer hook ([074813e](https://github.com/deriv-com/quill-design/commit/074813ed1ef37414d1fb64d52987ea90f6d9c819))
+* fixed dragging issue ([4a4b0ae](https://github.com/deriv-com/quill-design/commit/4a4b0aec4ec8a2320f3729d79a72edfae5858a0e))
+* fixed scrolling issue ([be51ee0](https://github.com/deriv-com/quill-design/commit/be51ee0fe72813fda84179b4270fef69336f24d5))
+* updated docs ([b3e8955](https://github.com/deriv-com/quill-design/commit/b3e89555e049efd42032b5c48668f136faba445a))
+* updated docs and types ([f6a97fc](https://github.com/deriv-com/quill-design/commit/f6a97fc843e02f75b926e02e210fe90f31251992))
+* updated icon component for trigger ([12ab90e](https://github.com/deriv-com/quill-design/commit/12ab90e53a7e64d00e6ac2052c778125ba65ffae))
+* updated storybook docs ([6a9901b](https://github.com/deriv-com/quill-design/commit/6a9901b6f673d36c097ec866d10ae15b95d4211c))
+* updated trigger icon conditon ([8982cc1](https://github.com/deriv-com/quill-design/commit/8982cc1c9a98512ed54e6f006fa92a4025944252))
+
+
+### ⚙️ 	 Continuous Integrations
+
+* updated release action [skip ci] ([fb44b28](https://github.com/deriv-com/quill-design/commit/fb44b28ee0cd401d1e6535cf6f731902903e732d))
+
 ## [1.2.15](https://github.com/deriv-com/quill-design/compare/v1.2.14...v1.2.15) (2023-12-19)
 
 

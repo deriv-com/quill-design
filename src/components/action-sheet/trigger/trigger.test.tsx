@@ -1,5 +1,6 @@
 import { screen, render } from 'test-utils'
 import userEvent from '@testing-library/user-event'
+import { LabelPairedAndroidIcon } from '@deriv/quill-icons/LabelPaired'
 import Trigger from '.'
 
 describe('<ActionSheet.Trigger/>', () => {
@@ -14,5 +15,11 @@ describe('<ActionSheet.Trigger/>', () => {
     const trigger = screen.getByText('click here')
     await userEvent.click(trigger)
     expect(handleClickMock).toHaveBeenCalled()
+  })
+
+  it('should render icon when icon prop is passed', async () => {
+    render(<Trigger iconComponent={LabelPairedAndroidIcon} />)
+    const triggerIcon = screen.getByTestId('dt-actionsheet-icon-button')
+    expect(triggerIcon).toBeInTheDocument()
   })
 })

@@ -6,8 +6,19 @@ import {
 } from './action-sheet.classnames'
 import { ExcludeAllNull } from 'types'
 
+type OpenType =
+  | {
+      isOpen?: boolean
+      onOpen: () => void
+    }
+  | {
+      isOpen?: undefined
+      onOpen?: () => void
+    }
+
 export type RootProps = ComponentPropsWithoutRef<'div'> &
-  ExcludeAllNull<VariantProps<typeof actionSheetRootCVA>> & {
+  ExcludeAllNull<VariantProps<typeof actionSheetRootCVA>> &
+  OpenType & {
     onClose?: () => void
     type?: 'modal' | 'non-modal'
     expandable?: boolean

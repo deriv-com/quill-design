@@ -1,18 +1,27 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import ActionSheetExample from './mocks/example'
+import { ActionSheetExample } from './mocks/example'
 
 const meta: Meta = {
-  title: 'Action Sheet',
+  title: 'Action Sheet/Uncontrolled',
   component: ActionSheetExample,
   tags: ['autodocs'],
+  parameters: {
+    controls: { hideNoControlsWarning: true },
+  },
   argTypes: {
-    show: {
+    isOpen: { table: { disable: true } },
+    show: { table: { disable: true } },
+    defaultVariants: { table: { disable: true } },
+    handleOpen: { table: { disable: true } },
+    handleClose: { table: { disable: true } },
+    onOpen: {
       description:
-        'This is the value that the developer will provide to `ActionSheet.Root` in order to toggle the component.',
+        'Pass your callback function using this method. It will be triggered on the open function.',
     },
     onClose: {
-      description: 'Function for invoking the `onClose` action.',
+      description:
+        'Pass your callback function using this method. It will be triggered on the open function.',
     },
     expandable: {
       control: { type: 'boolean' },
@@ -55,7 +64,7 @@ const meta: Meta = {
 export default meta
 type Story = StoryObj<typeof ActionSheetExample>
 
-export const Primary: Story = {
+export const Uncontrolled: Story = {
   args: {
     expandable: true,
     type: 'modal',
