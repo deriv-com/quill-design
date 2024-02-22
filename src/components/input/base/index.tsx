@@ -72,11 +72,12 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       label,
       statusIcon: StatusIcon = statusIcons[status],
       onChange,
+      value,
       ...rest
     },
     ref,
   ) => {
-    const [characterCount, setCharacterCount] = useState(0)
+    const [characterCount, setCharacterCount] = useState(value?.length || 0)
     return (
       <div className="flex w-full flex-col">
         <div
@@ -113,6 +114,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
                 setCharacterCount(e.target.value.length)
                 onChange?.(e)
               }}
+              value={value}
               ref={ref}
             />
 
