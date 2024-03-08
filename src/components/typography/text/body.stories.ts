@@ -16,6 +16,7 @@ const meta = {
     underline: false,
     italic: false,
     size: 'md',
+    colorStyle: 'default',
     children:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, repellendus, porro est veniam, sunt enim inventore minima ratione commodi architecto dignissimos tempora debitis minus facilis molestias optio eligendi consequuntur nisi?',
   },
