@@ -1,9 +1,10 @@
 import qtMerge from 'qtMerge'
-import { HTMLAttributes, forwardRef } from 'react'
+import { forwardRef } from 'react'
 import { BodyTextProps } from '../text/text.classes'
+import { HTMLElementWithoutColor } from 'types'
 
 export interface CaptionTextProps
-  extends HTMLAttributes<HTMLParagraphElement>,
+  extends HTMLElementWithoutColor<HTMLParagraphElement>,
     BodyTextProps {}
 
 export const captionTextSizeClassnames = 'text-caption'

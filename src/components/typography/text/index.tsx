@@ -1,5 +1,5 @@
 import { qtMerge } from 'qtMerge'
-import { HTMLAttributes, forwardRef } from 'react'
+import { forwardRef } from 'react'
 import {
   BodyTextProps,
   BodyTextSizeProps,
@@ -7,9 +7,10 @@ import {
   bodyTextParagraphSpacingCVA,
   bodyTextSizeCVA,
 } from './text.classes'
+import { HTMLElementWithoutColor } from 'types'
 
 export interface BodyTypographyProps
-  extends HTMLAttributes<HTMLParagraphElement>,
+  extends HTMLElementWithoutColor<HTMLParagraphElement>,
     BodyTextProps,
     BodyTextSizeProps {}
 
@@ -21,7 +22,7 @@ export const Text = forwardRef<HTMLParagraphElement, BodyTypographyProps>(
       bold = false,
       italic = false,
       underline = false,
-      colorStyle = 'default',
+      color = 'default',
       ...rest
     },
     ref,
@@ -31,7 +32,7 @@ export const Text = forwardRef<HTMLParagraphElement, BodyTypographyProps>(
         ref={ref}
         className={qtMerge(
           bodyTextCVA({
-            colorStyle,
+            color,
             bold,
             italic,
             underline,

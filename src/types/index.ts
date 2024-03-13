@@ -1,4 +1,5 @@
 import { QuillSvgProps } from '@deriv/quill-icons'
+import { HTMLAttributes } from 'react'
 
 export type Theme = 'dark' | 'light'
 
@@ -36,4 +37,9 @@ export type ExcludeNullAndUndefined<T, K extends keyof T> = {
 
 export type QuillIconComponent = React.ForwardRefExoticComponent<
   Omit<QuillSvgProps, 'ref'>
+>
+
+export type HTMLElementWithoutColor<T = HTMLElement> = Omit<
+  HTMLAttributes<T>,
+  'color'
 >
