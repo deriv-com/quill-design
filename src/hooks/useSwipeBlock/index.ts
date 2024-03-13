@@ -44,7 +44,7 @@ export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
         element.removeEventListener('scroll', handleScroll)
       }
     }
-  }, [])
+  }, [show])
 
   const bindHandle = useDrag(
     ({ dragging, distance, initial, xy }) => {
@@ -65,6 +65,7 @@ export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
       if (dragging) {
         setHeight(`${draggingPoint}px`)
       } else {
+        if (distance[1] === 0) return
         if (!isGoingDown) {
           if (draggingPoint >= 0 && draggingPoint <= windowHeight * 0.3) {
             setHeight('30vh')
@@ -88,7 +89,10 @@ export const useSwipeBlock = ({ show, onClose }: SwipeBlockType) => {
         }
       }
     },
-    { filterTaps: true },
+    {
+      filterTaps: true,
+      rubberband: true,
+    },
   )
   return { height, containerRef, bindHandle, isScrolled, isLg }
 }
