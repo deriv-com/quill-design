@@ -1,11 +1,11 @@
 import { ComponentProps, HTMLAttributes, ReactNode, forwardRef } from 'react'
 import { LabelPairedCircleInfoBoldIcon } from '@deriv/quill-icons/LabelPaired'
 
-import qtMerge from 'qtMerge'
+import qtMerge, { qtJoin } from 'qtMerge'
 import {
   SectionMessageBaseCVA,
   SectionMessageLinkSizeCVA,
-  SectionMessageMessageSizeCVA,
+  SectionMessageDescriptionSizeCVA,
   SectionMessageTitleSizeCVA,
 } from '../section-message.classname'
 import { VariantProps } from 'class-variance-authority'
@@ -50,21 +50,21 @@ export const Information = forwardRef<HTMLDivElement, InformationProps>(
             />
           </div>
           <div
-            className={qtMerge(
+            className={qtJoin(
               'flex flex-col',
               (title || description) && 'gap-gap-md',
             )}
           >
             <div>
               {title && (
-                <Text className={qtMerge(SectionMessageTitleSizeCVA({ size }))}>
+                <Text className={qtJoin(SectionMessageTitleSizeCVA({ size }))}>
                   {title}
                 </Text>
               )}
               {description && (
                 <Text
-                  className={qtMerge(
-                    qtMerge(SectionMessageMessageSizeCVA({ size })),
+                  className={qtJoin(
+                    SectionMessageDescriptionSizeCVA({ size }),
                     title && 'mt-400',
                   )}
                 >
@@ -76,7 +76,7 @@ export const Information = forwardRef<HTMLDivElement, InformationProps>(
               {link1 && (
                 <Link
                   {...link1}
-                  className={qtMerge(
+                  className={qtJoin(
                     SectionMessageLinkSizeCVA({ size }),
                     'p-50 text-solid-slate-1400',
                   )}
@@ -86,7 +86,7 @@ export const Information = forwardRef<HTMLDivElement, InformationProps>(
               {link2 && (
                 <Link
                   {...link2}
-                  className={qtMerge(
+                  className={qtJoin(
                     SectionMessageLinkSizeCVA({ size }),
                     'p-50 text-solid-slate-1400',
                   )}

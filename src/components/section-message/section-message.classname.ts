@@ -29,7 +29,7 @@ export const SectionMessageTitleSizeCVA = cva('!font-bold', {
     size: 'md',
   },
 })
-export const SectionMessageMessageSizeCVA = cva('', {
+export const SectionMessageDescriptionSizeCVA = cva('', {
   variants: {
     size: {
       sm: 'text-75',
