@@ -1,7 +1,7 @@
 import { cva } from 'class-variance-authority'
 
 export const SectionMessageBaseCVA = cva(
-  'rounded-[16px] inline-flex items-center justify-center p-800 text-solid-slate-50',
+  'rounded-[16px] inline-flex justify-start p-800 text-solid-slate-50',
   {
     variants: {
       colorStyle: {
