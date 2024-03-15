@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { InformationSectionMessage } from '.'
+import { Information } from '.'
 const meta = {
   title: 'Section-Message/Information',
-  component: InformationSectionMessage,
+  component: Information,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof InformationSectionMessage>
+} satisfies Meta<typeof Information>
 
 export default meta
 type Story = StoryObj<typeof meta>

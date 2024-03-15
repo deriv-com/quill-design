@@ -1,10 +1,8 @@
 import { ReactNode } from 'react'
-// import { EmptyBadge } from './empty'
-// import { LabelBadge } from './label'
+import { Information } from './information'
 
 type SectionMessageVariants = {
-  //   Empty: typeof EmptySectionMessage
-  //   Label: typeof LabelSectionMessage
+  Information: typeof Information
 }
 
 export const SectionMessage: SectionMessageVariants = ({
@@ -15,7 +13,6 @@ export const SectionMessage: SectionMessageVariants = ({
   return <>{children}</>
 }
 
-// SectionMessage.Empty = EmptySectionMessage
-// SectionMessage.Label = LabelSectionMessage
+SectionMessage.Information = Information
 
 export default SectionMessage
