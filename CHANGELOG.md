@@ -1,3 +1,10 @@
+## [1.2.19](https://github.com/deriv-com/quill-design/compare/v1.2.18...v1.2.19) (2024-03-18)
+
+
+### ♻️ 	 Chores
+
+* testing release flow ([4301fe2](https://github.com/deriv-com/quill-design/commit/4301fe24ebe1c08f64b8d2b6c637fca56d5ea4c9))
+
 ## [1.2.18](https://github.com/deriv-com/quill-design/compare/v1.2.17...v1.2.18) (2024-02-07)
 
 
