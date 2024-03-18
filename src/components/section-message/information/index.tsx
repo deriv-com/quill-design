@@ -41,38 +41,34 @@ export const Information = forwardRef<HTMLDivElement, InformationProps>(
         {...rest}
         data-testid="dt-info-component"
       >
-        <div className="flex items-start gap-gap-md">
-          <div>
-            <LabelPairedCircleInfoBoldIcon
-              iconSize="sm"
-              className="fill-status-info"
-              data-testid="dt-info-icon"
-            />
-          </div>
-          <div
-            className={qtJoin(
-              'flex flex-col',
-              (title || description) && 'gap-gap-md',
+        <div className="flex items-start">
+          <LabelPairedCircleInfoBoldIcon
+            iconSize="sm"
+            className="fill-status-info"
+            data-testid="dt-info-icon"
+          />
+          <div className={qtJoin('ml-400')}>
+            {title && (
+              <Text className={qtJoin(SectionMessageTitleSizeCVA({ size }))}>
+                {title}
+              </Text>
             )}
-          >
-            <div>
-              {title && (
-                <Text className={qtJoin(SectionMessageTitleSizeCVA({ size }))}>
-                  {title}
-                </Text>
+            {description && (
+              <Text
+                className={qtJoin(
+                  SectionMessageDescriptionSizeCVA({ size }),
+                  title && 'mt-400',
+                )}
+              >
+                {description}
+              </Text>
+            )}
+            <div
+              className={qtJoin(
+                (title || description) && 'mt-800',
+                'flex items-start justify-start gap-gap-md',
               )}
-              {description && (
-                <Text
-                  className={qtJoin(
-                    SectionMessageDescriptionSizeCVA({ size }),
-                    title && 'mt-400',
-                  )}
-                >
-                  {description}
-                </Text>
-              )}
-            </div>
-            <div className="flex items-start justify-start gap-gap-md">
+            >
               {link1 && (
                 <Link
                   {...link1}
