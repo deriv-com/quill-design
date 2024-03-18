@@ -34,7 +34,7 @@ type Story = StoryObj<typeof meta>
 export const NoIcon: Story = {
   args: {
     title: 'Accordion Elevate',
-    subtitle: 'There is no icon in this accordion',
+    subtitle: 'There is no icon in this Accordion',
     content: () => (
       <img
         className="flex w-full flex-1"
