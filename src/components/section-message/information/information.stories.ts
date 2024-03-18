@@ -17,7 +17,7 @@ export const InformationMessage: Story = {
     size: 'sm',
     colorStyle: 'information',
     title: 'Title',
-    description: 'Message',
+    description: 'Message Here',
     link1: {
       children: 'link1',
       href: '/',
