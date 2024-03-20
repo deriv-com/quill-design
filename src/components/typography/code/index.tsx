@@ -1,7 +1,8 @@
 import { VariantProps, cva } from 'class-variance-authority'
 import qtMerge from 'qtMerge'
-import { HTMLAttributes, forwardRef } from 'react'
+import { forwardRef } from 'react'
 import { BodyTextProps, bodyTextCVA } from '../text/text.classes'
+import { HTMLElementWithoutColor } from 'types'
 
 const codeTextSizeCVA = cva('', {
   variants: {
@@ -17,12 +18,23 @@ const codeTextSizeCVA = cva('', {
 export type CodeTextSizeProps = VariantProps<typeof codeTextSizeCVA>
 
 export interface CodeTextProps
-  extends HTMLAttributes<HTMLElement>,
+  extends HTMLElementWithoutColor,
     BodyTextProps,
     CodeTextSizeProps {}
 
 export const CodeText = forwardRef<HTMLParagraphElement, CodeTextProps>(
-  ({ size = 'md', bold, italic, className, underline, ...rest }, ref) => {
+  (
+    {
+      size = 'md',
+      bold,
+      italic,
+      className,
+      underline,
+      color = 'default',
+      ...rest
+    },
+    ref,
+  ) => {
     return (
       <code
         ref={ref}
@@ -30,7 +42,7 @@ export const CodeText = forwardRef<HTMLParagraphElement, CodeTextProps>(
           'font-mono',
           codeTextSizeCVA({ size }),
           bodyTextCVA({
-            colorStyle: 'default',
+            color,
             bold,
             italic,
             underline,

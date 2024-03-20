@@ -24,7 +24,7 @@ export const bodyTextCVA = cva('', {
     underline: {
       true: 'underline',
     },
-    colorStyle: {
+    color: {
       prominent: 'text-typography-prominent',
       default: 'text-typography-default',
       subtle: 'text-typography-subtle',
@@ -32,7 +32,7 @@ export const bodyTextCVA = cva('', {
     },
   },
   defaultVariants: {
-    colorStyle: 'default',
+    color: 'default',
     underline: false,
     italic: false,
     bold: false,
@@ -52,7 +52,7 @@ export const bodyTextParagraphSpacingCVA = cva('', {
 
 export type BodyTextProps = ExcludeNull<
   VariantProps<typeof bodyTextCVA>,
-  'colorStyle' | 'bold' | 'italic' | 'underline'
+  'color' | 'bold' | 'italic' | 'underline'
 >
 export type BodyTextSizeProps = ExcludeNull<
   VariantProps<typeof bodyTextSizeCVA>,
