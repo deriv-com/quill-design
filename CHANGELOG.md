@@ -1,3 +1,12 @@
+## [1.2.25](https://github.com/deriv-com/quill-design/compare/v1.2.24...v1.2.25) (2024-04-30)
+
+
+### ♻️ 	 Chores
+
+* **deps:** bump the npm_and_yarn group across 1 directory with 6 updates ([#157](https://github.com/deriv-com/quill-design/issues/157)) ([0e190e2](https://github.com/deriv-com/quill-design/commit/0e190e23d7c86f991f21ec47f82879b964bee5a0))
+* pin github actions ([61398f2](https://github.com/deriv-com/quill-design/commit/61398f2625a01ee7335f0c46e673b3cc1e016f7d))
+* pin github actions ([3da65a3](https://github.com/deriv-com/quill-design/commit/3da65a31ad28bf7e23373646c9ca95ce27c99b0c))
+
 ## [1.2.24](https://github.com/deriv-com/quill-design/compare/v1.2.23...v1.2.24) (2024-03-20)
 
 
