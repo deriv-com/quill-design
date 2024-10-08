@@ -67,7 +67,7 @@
     "@testing-library/user-event": "^14.4.3",
     "@types/jest": "^29.5.4",
     "@types/node": "^20.5.7",
-    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
     "@typescript-eslint/parser": "^6.5.0",
     "autoprefixer": "^10.4.15",
     "chromatic": "^7.1.0",
