@@ -20,7 +20,7 @@ exports[`IconButton Should render BasicButton Default 1`] = `
       </g>
       <defs>
         <clippath
-          id="c605cdbc85d4b7087c793ef3a21b2fb9__a"
+          id="d0faed49ff8e4bbe3abf393ae31fb66d__a"
         >
           <path
             d="M0 0h16v22H0z"
@@ -52,7 +52,7 @@ exports[`IconButton Should render IconButton with variant primary 1`] = `
       </g>
       <defs>
         <clippath
-          id="c605cdbc85d4b7087c793ef3a21b2fb9__a"
+          id="d0faed49ff8e4bbe3abf393ae31fb66d__a"
         >
           <path
             d="M0 0h16v22H0z"
@@ -84,7 +84,7 @@ exports[`IconButton Should render IconButton with variant secondary 1`] = `
       </g>
       <defs>
         <clippath
-          id="c605cdbc85d4b7087c793ef3a21b2fb9__a"
+          id="d0faed49ff8e4bbe3abf393ae31fb66d__a"
         >
           <path
             d="M0 0h16v22H0z"
@@ -116,7 +116,7 @@ exports[`IconButton Should render IconButton with variant tertiary 1`] = `
       </g>
       <defs>
         <clippath
-          id="c605cdbc85d4b7087c793ef3a21b2fb9__a"
+          id="d0faed49ff8e4bbe3abf393ae31fb66d__a"
         >
           <path
             d="M0 0h16v22H0z"
