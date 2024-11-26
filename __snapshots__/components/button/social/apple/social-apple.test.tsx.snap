@@ -15,7 +15,7 @@ exports[`Social Apple Button Should render Default Button 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#c3a677a926491e8d239e066d73f4ed14__a)"
+        clip-path="url(#5994bcbbbcebf4919eb973c8675a9fdf__a)"
         fill="#000"
       >
         <path
@@ -24,7 +24,7 @@ exports[`Social Apple Button Should render Default Button 1`] = `
       </g>
       <defs>
         <clippath
-          id="c3a677a926491e8d239e066d73f4ed14__a"
+          id="5994bcbbbcebf4919eb973c8675a9fdf__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -57,7 +57,7 @@ exports[`Social Apple Button Should render IconButton with className=opacity-50 
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#c3a677a926491e8d239e066d73f4ed14__a)"
+        clip-path="url(#5994bcbbbcebf4919eb973c8675a9fdf__a)"
         fill="#000"
       >
         <path
@@ -66,7 +66,7 @@ exports[`Social Apple Button Should render IconButton with className=opacity-50 
       </g>
       <defs>
         <clippath
-          id="c3a677a926491e8d239e066d73f4ed14__a"
+          id="5994bcbbbcebf4919eb973c8675a9fdf__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -99,7 +99,7 @@ exports[`Social Apple Button Should render Primary Variant 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#c3a677a926491e8d239e066d73f4ed14__a)"
+        clip-path="url(#5994bcbbbcebf4919eb973c8675a9fdf__a)"
         fill="#000"
       >
         <path
@@ -108,7 +108,7 @@ exports[`Social Apple Button Should render Primary Variant 1`] = `
       </g>
       <defs>
         <clippath
-          id="c3a677a926491e8d239e066d73f4ed14__a"
+          id="5994bcbbbcebf4919eb973c8675a9fdf__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -141,7 +141,7 @@ exports[`Social Apple Button Should render Secondary Variant 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#c3a677a926491e8d239e066d73f4ed14__a)"
+        clip-path="url(#5994bcbbbcebf4919eb973c8675a9fdf__a)"
         fill="#000"
       >
         <path
@@ -150,7 +150,7 @@ exports[`Social Apple Button Should render Secondary Variant 1`] = `
       </g>
       <defs>
         <clippath
-          id="c3a677a926491e8d239e066d73f4ed14__a"
+          id="5994bcbbbcebf4919eb973c8675a9fdf__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -183,7 +183,7 @@ exports[`Social Apple Button Should render no label if hideLabel is true 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#c3a677a926491e8d239e066d73f4ed14__a)"
+        clip-path="url(#5994bcbbbcebf4919eb973c8675a9fdf__a)"
         fill="#000"
       >
         <path
@@ -192,7 +192,7 @@ exports[`Social Apple Button Should render no label if hideLabel is true 1`] = `
       </g>
       <defs>
         <clippath
-          id="c3a677a926491e8d239e066d73f4ed14__a"
+          id="5994bcbbbcebf4919eb973c8675a9fdf__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -220,7 +220,7 @@ exports[`Social Apple Button Should render properly with fullWidth true 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#c3a677a926491e8d239e066d73f4ed14__a)"
+        clip-path="url(#5994bcbbbcebf4919eb973c8675a9fdf__a)"
         fill="#000"
       >
         <path
@@ -229,7 +229,7 @@ exports[`Social Apple Button Should render properly with fullWidth true 1`] = `
       </g>
       <defs>
         <clippath
-          id="c3a677a926491e8d239e066d73f4ed14__a"
+          id="5994bcbbbcebf4919eb973c8675a9fdf__a"
         >
           <path
             d="M0 0h32v32H0z"

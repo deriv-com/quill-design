@@ -118,6 +118,6 @@
     "react-dom": "^17.x || ^18.x",
     "tailwind-merge": "^1.14.0",
     "usehooks-ts": "^2.9.1",
-    "@deriv/quill-icons": "^1.19.4"
+    "@deriv/quill-icons": "^2.2.1"
   }
 }

@@ -14,7 +14,7 @@ exports[`Social Facebook Button Should render Default Button 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#63b7343c329dc7dd1232659e5afff2e8__a)"
+        clip-path="url(#9a3ca0797a8e03201504daee012aef81__a)"
       >
         <path
           clip-rule="evenodd"
@@ -29,7 +29,7 @@ exports[`Social Facebook Button Should render Default Button 1`] = `
       </g>
       <defs>
         <clippath
-          id="63b7343c329dc7dd1232659e5afff2e8__a"
+          id="9a3ca0797a8e03201504daee012aef81__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -61,7 +61,7 @@ exports[`Social Facebook Button Should render IconButton with className=opacity-
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#63b7343c329dc7dd1232659e5afff2e8__a)"
+        clip-path="url(#9a3ca0797a8e03201504daee012aef81__a)"
       >
         <path
           clip-rule="evenodd"
@@ -76,7 +76,7 @@ exports[`Social Facebook Button Should render IconButton with className=opacity-
       </g>
       <defs>
         <clippath
-          id="63b7343c329dc7dd1232659e5afff2e8__a"
+          id="9a3ca0797a8e03201504daee012aef81__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -108,7 +108,7 @@ exports[`Social Facebook Button Should render Primary Variant 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#63b7343c329dc7dd1232659e5afff2e8__a)"
+        clip-path="url(#9a3ca0797a8e03201504daee012aef81__a)"
       >
         <path
           clip-rule="evenodd"
@@ -123,7 +123,7 @@ exports[`Social Facebook Button Should render Primary Variant 1`] = `
       </g>
       <defs>
         <clippath
-          id="63b7343c329dc7dd1232659e5afff2e8__a"
+          id="9a3ca0797a8e03201504daee012aef81__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -155,7 +155,7 @@ exports[`Social Facebook Button Should render Secondary Variant 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#63b7343c329dc7dd1232659e5afff2e8__a)"
+        clip-path="url(#9a3ca0797a8e03201504daee012aef81__a)"
       >
         <path
           clip-rule="evenodd"
@@ -170,7 +170,7 @@ exports[`Social Facebook Button Should render Secondary Variant 1`] = `
       </g>
       <defs>
         <clippath
-          id="63b7343c329dc7dd1232659e5afff2e8__a"
+          id="9a3ca0797a8e03201504daee012aef81__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -202,7 +202,7 @@ exports[`Social Facebook Button Should render no label if hideLabel is true 1`] 
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#63b7343c329dc7dd1232659e5afff2e8__a)"
+        clip-path="url(#9a3ca0797a8e03201504daee012aef81__a)"
       >
         <path
           clip-rule="evenodd"
@@ -217,7 +217,7 @@ exports[`Social Facebook Button Should render no label if hideLabel is true 1`] 
       </g>
       <defs>
         <clippath
-          id="63b7343c329dc7dd1232659e5afff2e8__a"
+          id="9a3ca0797a8e03201504daee012aef81__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -244,7 +244,7 @@ exports[`Social Facebook Button Should render properly with fullWidth true 1`] =
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#63b7343c329dc7dd1232659e5afff2e8__a)"
+        clip-path="url(#9a3ca0797a8e03201504daee012aef81__a)"
       >
         <path
           clip-rule="evenodd"
@@ -259,7 +259,7 @@ exports[`Social Facebook Button Should render properly with fullWidth true 1`] =
       </g>
       <defs>
         <clippath
-          id="63b7343c329dc7dd1232659e5afff2e8__a"
+          id="9a3ca0797a8e03201504daee012aef81__a"
         >
           <path
             d="M0 0h32v32H0z"

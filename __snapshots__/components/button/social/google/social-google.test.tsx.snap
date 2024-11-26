@@ -14,7 +14,7 @@ exports[`Social Google Button Should render Default Button 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#877bb8084b86cf2a478afc0e85b0b012__a)"
+        clip-path="url(#9140f4470e0aa8aeab0c0759def10f8c__a)"
       >
         <path
           d="M32 16.375c0-1.097-.1-2.194-.294-3.273H16.325v6.186h8.787a7.34 7.34 0 0 1-3.256 4.829l5.274 4.02C30.22 25.348 32 21.248 32 16.374"
@@ -35,7 +35,7 @@ exports[`Social Google Button Should render Default Button 1`] = `
       </g>
       <defs>
         <clippath
-          id="877bb8084b86cf2a478afc0e85b0b012__a"
+          id="9140f4470e0aa8aeab0c0759def10f8c__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -67,7 +67,7 @@ exports[`Social Google Button Should render IconButton with className=opacity-50
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#877bb8084b86cf2a478afc0e85b0b012__a)"
+        clip-path="url(#9140f4470e0aa8aeab0c0759def10f8c__a)"
       >
         <path
           d="M32 16.375c0-1.097-.1-2.194-.294-3.273H16.325v6.186h8.787a7.34 7.34 0 0 1-3.256 4.829l5.274 4.02C30.22 25.348 32 21.248 32 16.374"
@@ -88,7 +88,7 @@ exports[`Social Google Button Should render IconButton with className=opacity-50
       </g>
       <defs>
         <clippath
-          id="877bb8084b86cf2a478afc0e85b0b012__a"
+          id="9140f4470e0aa8aeab0c0759def10f8c__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -120,7 +120,7 @@ exports[`Social Google Button Should render Primary Variant 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#877bb8084b86cf2a478afc0e85b0b012__a)"
+        clip-path="url(#9140f4470e0aa8aeab0c0759def10f8c__a)"
       >
         <path
           d="M32 16.375c0-1.097-.1-2.194-.294-3.273H16.325v6.186h8.787a7.34 7.34 0 0 1-3.256 4.829l5.274 4.02C30.22 25.348 32 21.248 32 16.374"
@@ -141,7 +141,7 @@ exports[`Social Google Button Should render Primary Variant 1`] = `
       </g>
       <defs>
         <clippath
-          id="877bb8084b86cf2a478afc0e85b0b012__a"
+          id="9140f4470e0aa8aeab0c0759def10f8c__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -173,7 +173,7 @@ exports[`Social Google Button Should render Secondary Variant 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#877bb8084b86cf2a478afc0e85b0b012__a)"
+        clip-path="url(#9140f4470e0aa8aeab0c0759def10f8c__a)"
       >
         <path
           d="M32 16.375c0-1.097-.1-2.194-.294-3.273H16.325v6.186h8.787a7.34 7.34 0 0 1-3.256 4.829l5.274 4.02C30.22 25.348 32 21.248 32 16.374"
@@ -194,7 +194,7 @@ exports[`Social Google Button Should render Secondary Variant 1`] = `
       </g>
       <defs>
         <clippath
-          id="877bb8084b86cf2a478afc0e85b0b012__a"
+          id="9140f4470e0aa8aeab0c0759def10f8c__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -226,7 +226,7 @@ exports[`Social Google Button Should render no label if hideLabel is true 1`] = 
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#877bb8084b86cf2a478afc0e85b0b012__a)"
+        clip-path="url(#9140f4470e0aa8aeab0c0759def10f8c__a)"
       >
         <path
           d="M32 16.375c0-1.097-.1-2.194-.294-3.273H16.325v6.186h8.787a7.34 7.34 0 0 1-3.256 4.829l5.274 4.02C30.22 25.348 32 21.248 32 16.374"
@@ -247,7 +247,7 @@ exports[`Social Google Button Should render no label if hideLabel is true 1`] = 
       </g>
       <defs>
         <clippath
-          id="877bb8084b86cf2a478afc0e85b0b012__a"
+          id="9140f4470e0aa8aeab0c0759def10f8c__a"
         >
           <path
             d="M0 0h32v32H0z"
@@ -274,7 +274,7 @@ exports[`Social Google Button Should render properly with fullWidth true 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <g
-        clip-path="url(#877bb8084b86cf2a478afc0e85b0b012__a)"
+        clip-path="url(#9140f4470e0aa8aeab0c0759def10f8c__a)"
       >
         <path
           d="M32 16.375c0-1.097-.1-2.194-.294-3.273H16.325v6.186h8.787a7.34 7.34 0 0 1-3.256 4.829l5.274 4.02C30.22 25.348 32 21.248 32 16.374"
@@ -295,7 +295,7 @@ exports[`Social Google Button Should render properly with fullWidth true 1`] = `
       </g>
       <defs>
         <clippath
-          id="877bb8084b86cf2a478afc0e85b0b012__a"
+          id="9140f4470e0aa8aeab0c0759def10f8c__a"
         >
           <path
             d="M0 0h32v32H0z"
