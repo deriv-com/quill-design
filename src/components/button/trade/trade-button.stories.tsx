@@ -16,7 +16,7 @@ const icons: Record<string, QuillIconComponent | undefined> = {
   none: undefined,
 }
 
-const meta = {
+const meta: Meta<typeof TradeButton> = {
   title: 'Buttons/Trade',
   component: TradeButton,
   parameters: {
@@ -53,7 +53,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof TradeButton>
+} as Meta<typeof TradeButton>
 
 export default meta
 type Story = StoryObj<typeof meta>

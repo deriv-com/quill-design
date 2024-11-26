@@ -41,7 +41,7 @@ const tabs: Record<string, object | null> = {
   none: null,
 }
 
-const meta = {
+const meta: Meta<typeof Accordion> = {
   title: 'Components/Accordion/Tab Accordion',
   argTypes: {
     tab: {
@@ -70,7 +70,7 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
-} satisfies Meta<typeof Accordion>
+} as Meta<typeof Accordion>
 
 export default meta
 

@@ -7,7 +7,7 @@ import {
 } from '@deriv/quill-icons/Standalone'
 import { Heading } from 'components/typography'
 
-const meta = {
+const meta: Meta<typeof Outline> = {
   title: 'Components/Accordion/Outline',
   argTypes: {
     icon: {
@@ -24,7 +24,7 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
-} satisfies Meta<typeof Outline>
+} as Meta<typeof Outline>
 
 export default meta
 

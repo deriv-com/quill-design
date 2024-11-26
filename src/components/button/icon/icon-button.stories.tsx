@@ -15,7 +15,7 @@ const icons: Record<string, QuillIconComponent | undefined> = {
   Apple: LabelPairedAppleSmIcon,
 }
 
-const meta = {
+const meta: Meta<typeof IconButton> = {
   title: 'Buttons/IconButton',
   component: IconButton,
   parameters: {
@@ -49,7 +49,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof IconButton>
+} as Meta<typeof IconButton>
 
 export default meta
 type Story = StoryObj<typeof meta>

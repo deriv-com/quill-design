@@ -7,7 +7,7 @@ import {
 } from '@deriv/quill-icons/Standalone'
 import { Heading } from 'components/typography'
 
-const meta = {
+const meta: Meta<typeof Fill> = {
   title: 'Components/Accordion/Fill',
   argTypes: {
     divider: ['both', 'bottom', 'none'],
@@ -25,7 +25,7 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
-} satisfies Meta<typeof Fill>
+} as Meta<typeof Fill>
 
 export default meta
 

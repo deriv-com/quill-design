@@ -59,7 +59,7 @@ const meta: Meta = {
       description: 'This prop is for `ActionSheet.Footer` buttons alignment',
     },
   },
-} satisfies Meta<typeof ActionSheetExampleTwo>
+} as Meta<typeof ActionSheetExampleTwo>
 
 export default meta
 type Story = StoryObj<typeof ActionSheetExampleTwo>

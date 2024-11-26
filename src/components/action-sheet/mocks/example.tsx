@@ -124,7 +124,6 @@ export const ActionSheetExampleWithIconTrigger = ({
         <ActionSheet.Trigger
           iconComponent={LabelPairedBarsMdBoldIcon}
           iconClassName="fill-solid-red-500"
-          iconSize="sm"
         />
         <ActionSheet.Portal>
           <ActionSheet.Close aria-label="close">
