@@ -16,7 +16,7 @@ const icons: Record<string, QuillIconComponent | undefined> = {
   none: undefined,
 }
 
-const meta = {
+const meta: Meta<typeof Button> = {
   title: 'Buttons/Basic',
   component: Button,
   parameters: {
@@ -50,7 +50,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof Button>
+} as Meta<typeof Button>
 
 export default meta
 type Story = StoryObj<typeof meta>

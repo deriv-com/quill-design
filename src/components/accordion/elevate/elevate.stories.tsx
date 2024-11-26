@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Elevate } from '.'
-
 import { Heading } from 'components/typography'
 import {
   StandaloneAndroidIcon,
@@ -8,8 +7,9 @@ import {
   StandaloneAppStoreIosIcon,
 } from '@deriv/quill-icons/Standalone'
 
-const meta = {
+const meta: Meta<typeof Elevate> = {
   title: 'Components/Accordion/Elevate',
+  component: Elevate,
   argTypes: {
     icon: {
       options: ['Android', 'App Store', 'IOS'],
@@ -21,14 +21,12 @@ const meta = {
     },
   },
   tags: ['autodocs'],
-  component: Elevate,
   parameters: {
     layout: 'centered',
   },
-} satisfies Meta<typeof Elevate>
+} as Meta<typeof Elevate>
 
 export default meta
-
 type Story = StoryObj<typeof meta>
 
 export const NoIcon: Story = {
@@ -38,7 +36,7 @@ export const NoIcon: Story = {
     content: () => (
       <img
         className="flex w-full flex-1"
-        src="https://placehold.co/800x320"
+        src="/api/placeholder/800/320"
         alt="Placeholder"
       />
     ),
@@ -53,7 +51,7 @@ export const ShortContent: Story = {
     content: () => (
       <img
         className="flex w-full flex-1"
-        src="https://placehold.co/800x320"
+        src="/api/placeholder/800/320"
         alt="Placeholder"
       />
     ),
@@ -70,7 +68,7 @@ export const LongSubtitle: Story = {
     content: () => (
       <img
         className="flex w-full flex-1"
-        src="https://placehold.co/800x320"
+        src="/api/placeholder/800/320"
         alt="Placeholder"
       />
     ),
@@ -85,7 +83,7 @@ export const LongContent: Story = {
     content: () => (
       <img
         className="flex w-full flex-1"
-        src="https://placehold.co/800x1320"
+        src="/api/placeholder/800/1320"
         alt="Placeholder"
       />
     ),
@@ -98,7 +96,7 @@ export const CustomContent: Story = {
     content: () => (
       <img
         className="flex w-full flex-1"
-        src="https://placehold.co/800x400"
+        src="/api/placeholder/800/400"
         alt="Placeholder"
       />
     ),
@@ -113,7 +111,7 @@ export const Disabled: Story = {
     content: () => (
       <img
         className="flex w-full flex-1"
-        src="https://placehold.co/800x400"
+        src="/api/placeholder/800/400"
         alt="Placeholder"
       />
     ),

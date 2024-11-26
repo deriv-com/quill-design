@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import SocialAppleButton from '.'
 
-const meta = {
+const meta: Meta<typeof SocialAppleButton> = {
   title: 'Buttons/Social/Apple Social Button',
   component: SocialAppleButton,
   parameters: {
@@ -20,7 +20,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof SocialAppleButton>
+} as Meta<typeof SocialAppleButton>
 
 export default meta
 type Story = StoryObj<typeof meta>
